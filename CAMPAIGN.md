@@ -7,19 +7,24 @@ Saga I — O Despertar do Código
 Episode 01 — O Primeiro Pulso
 
 ## Última Missão
-Nenhuma missão concluída ainda.
+Sistema de Primeiro Pulso da Academia
 
 ## Próxima Missão
-Episode 01 — O Primeiro Pulso
+Episode 02 — A Cidade dos Objetos
 
 ## Habilidades Desbloqueadas
-Nenhuma ainda.
+- Fazer um programa Java nascer
+- Usar class e main
+- Imprimir no console
+- Criar variáveis simples
+- Usar loop
+- Usar if / else
 
 ## Boss Battles Concluídas
-Nenhuma.
+Nenhuma
 
 ## Observações
-Campanha iniciada a partir do Backendverse Playbook v1.0.
+Primeira missão concluída e enviada ao GitHub.
 
 ## Última Revisão Técnica
-Nenhuma revisão ainda.
+Programa aprovado. Melhorar formatação e legibilidade nos próximos episódios.
