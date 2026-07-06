@@ -6,6 +6,7 @@ public class PrimeiroPulso{
 
         System.out.println("=== Backendverse Academy ===");
         System.out.println();
+
         System.out.println("Aprendiz detectado: " + name);
         System.out.println("Nível inicial: " + level);
         System.out.println("Iniciando primeiro pulso do código...");
@@ -15,6 +16,7 @@ public class PrimeiroPulso{
             System.out.println("Pulso " + i + " carregado.");
         }
         System.out.println();
+
         if(level >= 1){
             System.out.println("Status: aprendiz autorizado a iniciar a campanha.");
         }
@@ -22,6 +24,7 @@ public class PrimeiroPulso{
             System.out.println("Status: aprendiz não autorizado a iniciar a campanha.");
         }
         System.out.println();
+
         System.out.println("Episode 01 iniciado.\n" +
                 "A jornada rumo ao título de Jonin Backend começou.");
 
