@@ -15,7 +15,12 @@ public class PrimeiroPulso{
             System.out.println("Pulso " + i + " carregado.");
         }
         System.out.println();
-        System.out.println("Status: aprendiz autorizado a iniciar a campanha.");
+        if(level >= 1){
+            System.out.println("Status: aprendiz autorizado a iniciar a campanha.");
+        }
+        else{
+            System.out.println("Status: aprendiz não autorizado a iniciar a campanha.");
+        }
         System.out.println();
         System.out.println("Episode 01 iniciado.\n" +
                 "A jornada rumo ao título de Jonin Backend começou.");
