@@ -4,13 +4,13 @@
 Saga I — O Despertar do Código
 
 ## Episódio Atual
-Episode 01 — O Primeiro Pulso
+Episode 02 — A Vila dos Moldes: O Nascimento dos Objetos
 
 ## Última Missão
-Sistema de Primeiro Pulso da Academia
+Cadastro de Aprendizes da Academia
 
 ## Próxima Missão
-Episode 02 — A Cidade dos Objetos
+Episode 03 — O Chakra das Referências
 
 ## Habilidades Desbloqueadas
 - Fazer um programa Java nascer
@@ -19,12 +19,17 @@ Episode 02 — A Cidade dos Objetos
 - Criar variáveis simples
 - Usar loop
 - Usar if / else
+- Criar classes
+- Criar objetos com new
+- Usar atributos de instância
+- Criar métodos simples
+- Separar modelo e execução
 
 ## Boss Battles Concluídas
 Nenhuma
 
 ## Observações
-Primeira missão concluída e enviada ao GitHub.
+Episode 02 concluído com criação de dois objetos diferentes a partir da mesma classe.
 
 ## Última Revisão Técnica
-Programa aprovado. Melhorar formatação e legibilidade nos próximos episódios.
+Programa aprovado. Melhorar formatação, espaçamento e consistência visual nos próximos episódios.
