@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Saga01_O_Despertar_Do_Codigo/Episode01_O_Primeiro_Pulso/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Saga01_O_Despertar_Do_Codigo/Episode02_A_Cidade_Dos_Objetos/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Saga01_O_Despertar_Do_Codigo/Episode03_O_Chakra_Das_Referencias/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
