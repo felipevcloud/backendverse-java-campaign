@@ -4,13 +4,13 @@
 Saga I — O Despertar do Código
 
 ## Episódio Atual
-Episode 02 — A Vila dos Moldes: O Nascimento dos Objetos
+Episode 03 — O Chakra das Referências: Ecos do Heap
 
 ## Última Missão
-Cadastro de Aprendizes da Academia
+Câmara do Heap
 
 ## Próxima Missão
-Episode 03 — O Chakra das Referências
+Boss Battle I — O Registro da Academia
 
 ## Habilidades Desbloqueadas
 - Fazer um programa Java nascer
@@ -24,12 +24,16 @@ Episode 03 — O Chakra das Referências
 - Usar atributos de instância
 - Criar métodos simples
 - Separar modelo e execução
+- Diferenciar valor primitivo, referência e objeto
+- Usar arrays de primitivos
+- Usar arrays de objetos
+- Tratar null com segurança
 
 ## Boss Battles Concluídas
 Nenhuma
 
 ## Observações
-Episode 02 concluído com criação de dois objetos diferentes a partir da mesma classe.
+Episode 03 concluído com demonstrações de primitivos, referências, arrays e null.
 
 ## Última Revisão Técnica
-Programa aprovado. Melhorar formatação, espaçamento e consistência visual nos próximos episódios.
+Programa aprovado. Melhorar formatação e consistência visual antes da Boss Battle I.
