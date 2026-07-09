@@ -10,7 +10,7 @@ public class RegistroAcademia {
        AprendizRegistro varyon = new AprendizRegistro();
        AprendizRegistro luna = new AprendizRegistro();
        AprendizRegistro kai = new AprendizRegistro();
-       AprendizRegistro[] alunos = new AprendizRegistro[4];
+       AprendizRegistro[] alunos = new AprendizRegistro[5];
 
        varyon.nome = "Varyon";
        varyon.tecnicaPrincipal = "Java";

@@ -21,8 +21,8 @@ public class AprendizRegistro {
     }
 
     void treinar() {
+        nivel++;
         System.out.println("Treinamento especial iniciado...");
         System.out.println(nome + " treinou e subiu de nível.");
-        nivel++;
     }
 }
