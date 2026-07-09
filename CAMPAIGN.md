@@ -1,16 +1,16 @@
 # Backendverse Campaign
 
 ## Saga Atual
-Saga I — O Despertar do Código
+Saga II — O Caminho das Técnicas
 
 ## Episódio Atual
-Episode 03 — O Chakra das Referências: Ecos do Heap
+Boss Battle I — O Registro da Academia
 
 ## Última Missão
-Câmara do Heap
+Boss Battle I — O Registro da Academia
 
 ## Próxima Missão
-Boss Battle I — O Registro da Academia
+Episode 04 — O Despertar dos Métodos
 
 ## Habilidades Desbloqueadas
 - Fazer um programa Java nascer
@@ -28,12 +28,13 @@ Boss Battle I — O Registro da Academia
 - Usar arrays de primitivos
 - Usar arrays de objetos
 - Tratar null com segurança
+- Integrar fundamentos iniciais em um mini-sistema
 
 ## Boss Battles Concluídas
-Nenhuma
+- Boss Battle I — O Registro da Academia
 
 ## Observações
-Episode 03 concluído com demonstrações de primitivos, referências, arrays e null.
+A primeira Boss Battle foi concluída com sucesso, integrando os conceitos dos Episódios 01 a 03.
 
 ## Última Revisão Técnica
-Programa aprovado. Melhorar formatação e consistência visual antes da Boss Battle I.
+Boss Battle aprovada. Melhorar espaçamento, consistência visual e nomes de referências nos próximos episódios.
