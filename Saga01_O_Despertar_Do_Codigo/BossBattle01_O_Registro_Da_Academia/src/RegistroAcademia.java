@@ -55,8 +55,5 @@ public class RegistroAcademia {
 
        System.out.println("Boss Battle I concluída.\n" +
                "Registro da Academia validado com sucesso.");
-
-
-
     }
 }
