@@ -40,7 +40,7 @@ public class AprendizTecnica {
     int consultarNivel(){
         if (experiencia < 10) {
            return 1;
-        } else if (experiencia >= 10 && experiencia < 19) {
+        } else if (experiencia >= 10 && experiencia <= 19) {
             return 2;
         } else {
             return 3;

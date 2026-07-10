@@ -11,17 +11,23 @@ public class DojoTecnicas {
         System.out.println("Status inicial:");
         varyon.mostrarStatus();
         System.out.println();
+        luna.mostrarStatus();
+        System.out.println();
 
-        varyon.treinar(10, 15);
+        varyon.treinar(10, 10);
         System.out.println();
 
         System.out.println("Verificação de treino:");
         if(varyon.podeTreinar(10)){
             System.out.println("Varyon ainda pode treinar.");
+        } else {
+            System.out.println("Varyon precisa descansar");
         }
         System.out.println();
 
         varyon.descansar(15);
+        System.out.println();
+        varyon.treinar(15, 5);
         System.out.println();
 
         System.out.println("Status final:");
