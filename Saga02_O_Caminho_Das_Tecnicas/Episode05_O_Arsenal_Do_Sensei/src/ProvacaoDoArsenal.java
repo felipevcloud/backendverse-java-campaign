@@ -34,10 +34,15 @@ public class ProvacaoDoArsenal {
         for (int i = 0; i < alvos.length; i++){
             System.out.println("Alvo " + i);
             int dmgcount = 0;
-            while(alvos[i].estaDestruido() != true){
-                System.out.println("Ataque de " + arsenal[dmgcount] + " pontos.");
-                alvos[i].receberAtaque(arsenal[dmgcount]);
+            int dmg = 0;
+            while(!alvos[i].estaDestruido()){
+                System.out.println("Ataque de " + arsenal[dmg] + " pontos.");
+                alvos[i].receberAtaque(arsenal[dmg]);
                 System.out.println("Resistência restante: " + alvos[i].consultarResistencia() + "\n");
+                dmg++;
+                if (dmg == arsenal.length) {
+                    dmg = 0;
+                }
                 dmgcount++;
                 ataques++;
             }
@@ -50,10 +55,10 @@ public class ProvacaoDoArsenal {
         System.out.println("Ataques executados: " + ataques);
         System.out.println();
 
-        System.out.println("Status final:");
-        System.out.println("Alvo de Madeira — Destruído\n" +
-                "Alvo de Ferro — Destruído\n" +
-                "Alvo Amaldiçoado — Destruído\n");
+        System.out.println("Status final:\n");
+        madeira.mostrarStatus();
+        ferro.mostrarStatus();
+        amaldicoado.mostrarStatus();
         System.out.println("Provação do Arsenal concluída com sucesso.");
     }
 }
