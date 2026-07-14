@@ -37,7 +37,7 @@ public class BibliotecaTecnicas {
     boolean removerTecnicaPorNome (String nomeBuscado) {
         for (int i = 0; i < consultarQuantidade(); i++) {
             if (tecnicas.get(i).possuiNome(nomeBuscado)) {
-                tecnicas.remove(tecnicas.get(i));
+                tecnicas.remove(i);
                 return true;
             }
         }
@@ -49,7 +49,7 @@ public class BibliotecaTecnicas {
             System.out.println("Técnica encontrada na posição " + indice + ":\n");
             tecnicas.get(indice).mostrarFicha();
         } else {
-            System.out.println("Posição " + indice + " inválida.\n");
+            System.out.println("Posição " + indice + " inválida.\ntecnicas.remove(tecnicas.get(i));");
         }
     }
 }
