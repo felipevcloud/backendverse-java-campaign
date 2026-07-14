@@ -49,7 +49,7 @@ public class BibliotecaTecnicas {
             System.out.println("Técnica encontrada na posição " + indice + ":\n");
             tecnicas.get(indice).mostrarFicha();
         } else {
-            System.out.println("Posição " + indice + " inválida.\ntecnicas.remove(tecnicas.get(i));");
+            System.out.println("Posição " + indice + " inválida.\n");
         }
     }
 }
