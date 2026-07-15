@@ -2,19 +2,19 @@
 
 ## Saga Atual
 
-Saga II — O Caminho das Técnicas
+Saga III — O Legado dos Objetos
 
 ## Episódio Atual
 
-Episode 06 — A Biblioteca dos Sábios: O Grimório Infinito
+Boss Battle II — O Primeiro Sistema da Guilda: O Quadro das Missões Eternas
 
 ## Última Missão
 
-O Grimório Infinito
+Construção do primeiro sistema completo da Guilda Backend.
 
 ## Próxima Missão
 
-Boss Battle II — O Primeiro Sistema da Guilda
+Episode 07 — A Herança dos Clãs
 
 ## Habilidades Desbloqueadas
 
@@ -32,22 +32,30 @@ Boss Battle II — O Primeiro Sistema da Guilda
 * Criar testes manuais com resultados PASS e FAIL
 * Utilizar for e while conforme o fluxo
 * Separar índices e contadores por responsabilidade
-* Importar classes da biblioteca Java
+* Importar e utilizar classes da biblioteca Java
 * Utilizar ArrayList para armazenar objetos
-* Adicionar, acessar, listar e remover elementos
-* Validar índices antes de acessar coleções
-* Buscar objetos pelo conteúdo de seus atributos
+* Adicionar, acessar, buscar e remover elementos
+* Validar índices e referências antes do acesso
 * Consultar e compreender métodos da API Java
-* Usar ferramentas prontas da linguagem sem reinventar estruturas
+* Distribuir responsabilidades entre diferentes objetos
+* Coordenar operações sem acessar diretamente o estado interno
+* Controlar o ciclo de vida de uma entidade
+* Validar regras de negócio com testes manuais
+* Construir um sistema orientado a objetos com múltiplas classes colaborando
 
 ## Boss Battles Concluídas
 
 * Boss Battle I — O Registro da Academia
+* Boss Battle II — O Primeiro Sistema da Guilda
 
 ## Observações
 
-Episode 06 concluído com uma entidade de domínio, uma classe responsável pelo gerenciamento de um ArrayList e uma classe principal responsável pelo fluxo de execução. A coleção demonstrou crescimento dinâmico, busca, remoção e validação de posições.
+A Saga II foi concluída com um sistema de aventureiros e missões. O projeto integrou atributos privados, métodos com parâmetros e retorno, validações, testes manuais, ArrayList, busca, remoção e colaboração entre objetos.
+
+Durante a revisão, foram corrigidos problemas relacionados à remoção da posição errada, repetição de missões concluídas, configuração inadequada dos testes, energia inicial negativa e informações ausentes no relatório final.
 
 ## Última Revisão Técnica
 
-Programa aprovado. O método de remoção utiliza remove(indice), referências null são rejeitadas e posições inválidas são tratadas sem interromper a aplicação. Continuar aprimorando espaçamento, nomes e consistência visual.
+Boss Battle II aprovada. O sistema rejeita referências null, impede a repetição de missões concluídas, mantém missões disponíveis após tentativas fracassadas, atualiza energia e experiência após sucesso e remove a missão correta pelo título.
+
+Nos próximos episódios, continuar fortalecendo os testes, a consistência das validações, os nomes das variáveis e a formatação profissional.
