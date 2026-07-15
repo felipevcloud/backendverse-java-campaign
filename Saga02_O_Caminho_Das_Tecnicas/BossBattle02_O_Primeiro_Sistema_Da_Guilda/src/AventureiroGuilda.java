@@ -9,7 +9,11 @@ public class AventureiroGuilda {
     void configurar(String novoNome, String novaEspecialidade, int energiaInicial) {
         nome = novoNome;
         especialidade = novaEspecialidade;
-        energia = energiaInicial;
+        if (energiaInicial < 0) {
+            energia = 0;
+        } else {
+            energia = energiaInicial;
+        }
         experiencia = 0;
         ativo = true;
     }
@@ -74,6 +78,7 @@ public class AventureiroGuilda {
         System.out.println("Especialidade: " + especialidade);
         System.out.println("Energia: " + energia);
         System.out.println("Experiência: " + experiencia);
+        System.out.println("Nível: " + consultarNivel());
         if(ativo) {
             System.out.println("Status: Ativo");
         } else {

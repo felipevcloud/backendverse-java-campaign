@@ -34,7 +34,7 @@ public class TesteSistemaGuilda {
             System.out.println("[FAIL] Missão inexistente foi encontrada.");
         }
 
-        aventureiroTeste.configurar("Teste", "Teste", 2);
+        aventureiroTeste.configurar("Teste", "Teste", 1);
         if(!quadroTeste.concluirMissao("Teste", aventureiroTeste) && missaoTeste.estaDisponivel() && aventureiroTeste.consultarExperiencia() == 0) {
             System.out.println("[PASS] Missão foi recusada por energia insuficiente.");
             System.out.println("[PASS] Missão permaneceu disponível.");
@@ -44,7 +44,7 @@ public class TesteSistemaGuilda {
         }
 
         aventureiroTeste.descansar(5);
-        if(quadroTeste.concluirMissao("Teste", aventureiroTeste) && !missaoTeste.estaDisponivel() && aventureiroTeste.consultarExperiencia() == 1) {
+        if(quadroTeste.concluirMissao("Teste", aventureiroTeste) && !missaoTeste.estaDisponivel() && aventureiroTeste.consultarExperiencia() == 1 && aventureiroTeste.consultarEnergia() == 4) {
             System.out.println("[PASS] Missão foi concluída após o descanso.");
             System.out.println("[PASS] Energia e experiência foram atualizadas.");
         } else {

@@ -39,7 +39,7 @@ public class QuadroGuilda {
 
     boolean removerMissaoPorTitulo(String tituloBuscado) {
         for(int i = 0; i < consultarQuantidade(); i++) {
-            if(contemMissao(tituloBuscado)) {
+            if(missoes.get(i).possuiTitulo(tituloBuscado)) {
                 missoes.remove(i);
                 return true;
             }
@@ -51,7 +51,7 @@ public class QuadroGuilda {
         if (aventureiro != null) {
             for (MissaoGuilda missao : missoes) {
                 if (missao.possuiTitulo(tituloBuscado)) {
-                    if (aventureiro.executarMissao(missao.consultarCustoEnergia(), missao.consultarRecompensaExperiencia())) {
+                    if (missao.estaDisponivel() && aventureiro.executarMissao(missao.consultarCustoEnergia(), missao.consultarRecompensaExperiencia())) {
                         missao.concluir();
                         return true;
                     }

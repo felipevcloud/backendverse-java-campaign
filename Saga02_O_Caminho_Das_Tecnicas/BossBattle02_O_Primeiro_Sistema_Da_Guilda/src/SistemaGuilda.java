@@ -70,6 +70,7 @@ public class SistemaGuilda {
         System.out.println();
         System.out.println("Missões registradas: " + missoes.consultarQuantidade());
         System.out.println();
+        missoes.listarMissoes();
         varyon.mostrarFicha();
         System.out.println();
         luna.mostrarFicha();
