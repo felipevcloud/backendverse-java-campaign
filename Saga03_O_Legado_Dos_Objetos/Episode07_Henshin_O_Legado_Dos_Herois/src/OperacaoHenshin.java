@@ -2,7 +2,7 @@ public class OperacaoHenshin {
     public static void main(String[] args) {
 
         System.out.println("=== Backendverse Academy ===\n" +
-                "Episode 07 — Henshin! O Legado dos Hérois\n");
+                "Episode 07 — Henshin! O Legado dos Heróis\n");
 
         Arma armaRider = new Arma();
         Arma armaRanger = new Arma();
