@@ -6,15 +6,15 @@ Saga III — O Legado dos Objetos
 
 ## Episódio Atual
 
-Episode 07 — A Herança dos Clãs: Henshin! O Legado dos Heróis
+Episode 08 — O Torneio das Mil Formas
 
 ## Última Missão
 
-Construção de uma formação de Riders e Rangers utilizando herança, composição, sobrescrita e polimorfismo.
+Construção da Arena Prismática utilizando classes abstratas, interfaces, múltiplos contratos, referências polimórficas e coleções organizadas por capacidade.
 
 ## Próxima Missão
 
-Episode 08 — O Torneio das Mil Formas
+Episode 09 — O Ciclo das Almas no Heap
 
 ## Habilidades Desbloqueadas
 
@@ -51,6 +51,15 @@ Episode 08 — O Torneio das Mil Formas
 * Armazenar subclasses em um ArrayList da superclasse
 * Combinar herança e composição de forma coerente
 * Modelar classes, relações e responsabilidades antes da implementação
+* Criar classes abstratas que não podem ser instanciadas
+* Declarar métodos abstratos como obrigações das subclasses
+* Combinar métodos abstratos e concretos em uma mesma abstração
+* Criar interfaces para representar contratos de capacidade
+* Implementar múltiplas interfaces em uma mesma classe
+* Utilizar interfaces como tipos de referências polimórficas
+* Armazenar objetos em ArrayLists tipados por abstrações
+* Coordenar comportamentos sem instanceof ou identificação de classes concretas
+* Programar para abstrações
 
 ## Boss Battles Concluídas
 
@@ -63,12 +72,20 @@ A Saga III foi iniciada com um sistema inspirado em Kamen Rider e Super Sentai. 
 
 A Agência Vértice armazenou diferentes subclasses em um ArrayList de Combatente e coordenou transformações, ataques e golpes finais sem identificar manualmente o tipo de cada objeto.
 
-O episódio também marcou o início do Desafio de Modelagem obrigatório. A estrutura de classes, atributos, métodos, relações e responsabilidades foi planejada antes da implementação.
+O Episode 07 também marcou o início do Desafio de Modelagem obrigatório. A estrutura de classes, atributos, métodos, relações e responsabilidades foi planejada antes da implementação.
+
+No Episode 08, a Arena Prismática reuniu participantes com capacidades diferentes por meio de uma classe abstrata e dos contratos Transformavel e Invocador.
+
+O Conselho Prismático utilizou coleções separadas de Participante, Transformavel e Invocador para coordenar técnicas especiais, transformações e invocações sem depender das classes concretas.
+
+A validação de energia foi centralizada na classe abstrata Participante. Técnicas válidas consumiram energia, enquanto a técnica recusada preservou corretamente o estado do participante.
 
 ## Última Revisão Técnica
 
-Episode 07 aprovado. O projeto compila e executa corretamente, utiliza herança apenas em relações IS-A, composição em relações HAS-A e sobrescrita para especializar transformações e golpes finais.
+Episode 08 aprovado. O projeto compila e executa corretamente, utiliza uma classe abstrata para representar o estado compartilhado dos participantes e métodos abstratos para obrigar cada classe concreta a implementar sua própria técnica especial.
 
-O sistema impede golpes finais sem transformação ou energia suficiente, consome energia após golpes válidos e coordena Rider e Ranger polimorficamente sem utilizar instanceof.
+As interfaces Transformavel e Invocador representam capacidades independentes da hierarquia principal. GuerreiroQuimera implementa apenas Transformavel, OraculoAstral implementa apenas Invocador e SoberanoEclipse implementa os dois contratos.
 
-Foi corrigida apenas a grafia de “Heróis” no cabeçalho da execução. Os métodos genéricos vazios de Combatente poderão ser melhorados no Episode 08 após o estudo formal de classes abstratas.
+O ConselhoPrismatico coordena participantes por meio de ArrayList de Participante, Transformavel e Invocador, executando comportamentos polimorficamente sem utilizar instanceof, getClass ou comparações de classes concretas.
+
+A validação de energia permanece centralizada em Participante. A técnica especial recusada não consome energia, e as técnicas válidas atualizam corretamente o estado dos participantes.
