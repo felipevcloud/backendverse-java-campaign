@@ -1,4 +1,4 @@
-public class Kami extends Entidade{
+public class Kami extends Entidade {
 
     public Kami() {
         this("Kami Ancestral", 100);

@@ -4,7 +4,7 @@ public abstract class Entidade {
     private int energia;
 
     public Entidade(String nome, int energia) {
-        if (nome == null || nome == "") {
+        if (nome == null || nome.isEmpty()) {
             nome = "Alma Sem Nome";
             this.nome = nome;
             System.out.println("[Entidade] Nome inválido. Valor padrão aplicado: Alma Sem Nome.");

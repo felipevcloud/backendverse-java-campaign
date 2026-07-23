@@ -1,4 +1,4 @@
-public class Akuma extends Entidade{
+public class Akuma extends Entidade {
 
     public Akuma(String nome, int energia) {
         super(nome, energia);

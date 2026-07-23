@@ -1,4 +1,4 @@
-public class Yokai extends Entidade{
+public class Yokai extends Entidade {
 
     public Yokai(String nome, int energia) {
         super(nome, energia);
