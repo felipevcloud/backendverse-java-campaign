@@ -6,15 +6,15 @@ Saga III — O Legado dos Objetos
 
 ## Episódio Atual
 
-Episode 08 — O Torneio das Mil Formas
+Episode 09 — O Ciclo das Almas no Heap
 
 ## Última Missão
 
-Construção da Arena Prismática utilizando classes abstratas, interfaces, múltiplos contratos, referências polimórficas e coleções organizadas por capacidade.
+Construção do Santuário das Almas Digitais utilizando construtores, sobrecarga, this, super, validação de estado inicial, polimorfismo e ciclo de vida de referências no heap.
 
 ## Próxima Missão
 
-Episode 09 — O Ciclo das Almas no Heap
+Boss Battle III — O Torneio dos Arquitetos
 
 ## Habilidades Desbloqueadas
 
@@ -60,6 +60,18 @@ Episode 09 — O Ciclo das Almas no Heap
 * Armazenar objetos em ArrayLists tipados por abstrações
 * Coordenar comportamentos sem instanceof ou identificação de classes concretas
 * Programar para abstrações
+* Criar objetos em estado válido por meio de construtores
+* Declarar construtores com parâmetros
+* Utilizar sobrecarga de construtores
+* Reutilizar inicialização com this(...)
+* Encadear construtores da herança com super(...)
+* Compreender a ordem de inicialização entre superclasses e subclasses
+* Validar dados obrigatórios durante a construção
+* Diferenciar objetos de suas referências
+* Compreender stack e heap em nível conceitual
+* Identificar referências mantidas por variáveis e coleções
+* Identificar quando um objeto se torna elegível para garbage collection
+* Controlar a criação e a consistência inicial dos objetos
 
 ## Boss Battles Concluídas
 
@@ -80,12 +92,20 @@ O Conselho Prismático utilizou coleções separadas de Participante, Transforma
 
 A validação de energia foi centralizada na classe abstrata Participante. Técnicas válidas consumiram energia, enquanto a técnica recusada preservou corretamente o estado do participante.
 
+No Episode 09, o Santuário das Almas Digitais utilizou construtores para garantir que todas as entidades nascessem em um estado válido.
+
+A classe Kami demonstrou sobrecarga de construtores, reutilização com this(...) e inicialização da superclasse com super(...). Yokai e Akuma também participaram da cadeia de inicialização por herança.
+
+A remoção do Yokai da coleção e a anulação de sua referência local demonstraram que objetos se tornam elegíveis para coleta apenas quando não existem mais referências alcançáveis apontando para eles.
+
 ## Última Revisão Técnica
 
-Episode 08 aprovado. O projeto compila e executa corretamente, utiliza uma classe abstrata para representar o estado compartilhado dos participantes e métodos abstratos para obrigar cada classe concreta a implementar sua própria técnica especial.
+Episode 09 aprovado. O projeto compila e executa corretamente, utiliza construtores para validar e inicializar o estado obrigatório das entidades e impede que objetos concretos terminem sua criação com nome ou energia inválidos.
 
-As interfaces Transformavel e Invocador representam capacidades independentes da hierarquia principal. GuerreiroQuimera implementa apenas Transformavel, OraculoAstral implementa apenas Invocador e SoberanoEclipse implementa os dois contratos.
+Kami possui construtores padrão e personalizado. O construtor padrão utiliza this(...) para reutilizar a inicialização, enquanto os construtores das três entidades utilizam super(...) para encaminhar nome e energia à classe abstrata Entidade.
 
-O ConselhoPrismatico coordena participantes por meio de ArrayList de Participante, Transformavel e Invocador, executando comportamentos polimorficamente sem utilizar instanceof, getClass ou comparações de classes concretas.
+A ordem da cadeia de construtores é apresentada corretamente no console. As entidades são armazenadas e coordenadas polimorficamente por meio de um ArrayList de Entidade.
 
-A validação de energia permanece centralizada em Participante. A técnica especial recusada não consome energia, e as técnicas válidas atualizam corretamente o estado dos participantes.
+O Yokai é removido da coleção antes de sua referência local receber null. O programa explica corretamente que o objeto se torna elegível para garbage collection, sem afirmar que a coleta ou destruição ocorreu imediatamente.
+
+A validação de nomes vazios utiliza comparação por conteúdo e funciona corretamente para literais vazios, novas instâncias de String vazias e referências null.
