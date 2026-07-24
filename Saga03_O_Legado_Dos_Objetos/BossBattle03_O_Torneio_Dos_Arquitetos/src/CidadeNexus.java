@@ -8,7 +8,7 @@ public class CidadeNexus extends Construcao implements Expansora{
     @Override
     public boolean ativarSistemaPrincipal() {
         if (getNucleo().consumirEnergia(getCustoAtivacao())) {
-            System.out.println(getNome() + " ativa o sistema Rede de Expansão Modular!\n" +
+            System.out.println(getNome() + " ativa o sistema " + getSistemaPrincipal() + "\n" +
                     "Novos setores são conectados à cidade.\n");
             return true;
         } else {

@@ -4,14 +4,14 @@ public class TesteTorneioDosArquitetos {
                 "Boss Battle III — Testes do Torneio dos Arquitetos\n");
 
         NucleoArquitetonico nucleo = new NucleoArquitetonico("", -10);
-        if (nucleo.getIdentificacao() == "Núcleo Desconhecido" && nucleo.getEnergia() == 1) {
+        if (nucleo.getIdentificacao().equals("Núcleo Desconhecido") && nucleo.getEnergia() == 1) {
             System.out.println("[PASS]");
         } else {
             System.out.println("[FAIL]");
         }
 
         FortalezaAegis fort = new FortalezaAegis();
-        if (fort.getNome().equals("Fortaleza Aegis Prime") && fort.getArquiteto().equals("Mestre Aegis") && fort.getIntegradade() == 100 && fort.getNucleo().getEnergia() == 60 && fort.getCustoAtivacao() == 15) {
+        if (fort.getNome().equals("Fortaleza Aegis Prime") && fort.getArquiteto().equals("Mestre Atlas") && fort.getIntegridade() == 100 && fort.getNucleo().getEnergia() == 60 && fort.getCustoAtivacao() == 15) {
             System.out.println("[PASS]");
         } else {
             System.out.println("[FAIL]");

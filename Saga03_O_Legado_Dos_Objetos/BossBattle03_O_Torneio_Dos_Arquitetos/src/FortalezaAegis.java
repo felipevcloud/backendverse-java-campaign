@@ -1,7 +1,7 @@
 public class FortalezaAegis extends Construcao implements Defensora {
 
     public FortalezaAegis() {
-        this("Fortaleza Aegis Prime", "Mestre Aegis", 100, new NucleoArquitetonico("Coração de Aegis", 60), "Muralha do Titã", 15);
+        this("Fortaleza Aegis Prime", "Mestre Atlas", 100, new NucleoArquitetonico("Coração de Aegis", 60), "Muralha do Titã", 15);
         System.out.println("[Fortaleza] Projeto padrão de Aegis concluído.");
     }
 
@@ -13,7 +13,7 @@ public class FortalezaAegis extends Construcao implements Defensora {
     @Override
     public boolean ativarSistemaPrincipal() {
         if (getNucleo().consumirEnergia(getCustoAtivacao())) {
-            System.out.println(getNome() + " desperta o sistema Muralha do Titã!\n" +
+            System.out.println(getNome() + " desperta o sistema " + getSistemaPrincipal() + "\n" +
                     "A fortaleza assume sua configuração máxima de combate.\n");
             return true;
         } else {

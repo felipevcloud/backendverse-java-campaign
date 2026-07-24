@@ -85,7 +85,7 @@ public class ConselhoDosArquitetos {
 
     public void apresentarRelatorioFinal() {
         for (Construcao construcao : construcoes) {
-            System.out.println(construcao.getNome() + " | Integridade: " + construcao.getIntegradade() + " | Energia: " + construcao.getNucleo().getEnergia());
+            System.out.println(construcao.getNome() + " | Integridade: " + construcao.getIntegridade() + " | Energia: " + construcao.getNucleo().getEnergia());
         }
     }
 }

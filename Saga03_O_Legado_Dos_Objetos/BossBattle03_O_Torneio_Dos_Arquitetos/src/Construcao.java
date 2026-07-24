@@ -2,33 +2,33 @@ public abstract class Construcao {
 
     private String nome;
     private String arquiteto;
-    private int integradade;
+    private int integridade;
     private NucleoArquitetonico nucleo;
     private String sistemaPrincipal;
     private int custoAtivacao;
 
-    public Construcao(String nome, String arquiteto, int integradade, NucleoArquitetonico nucleo, String sistemaPrincipal, int custoAtivacao) {
-        if (nome.isEmpty() || nome == null) {
+    public Construcao(String nome, String arquiteto, int integridade, NucleoArquitetonico nucleo, String sistemaPrincipal, int custoAtivacao) {
+        if (nome == null || nome.isEmpty()) {
             nome = "Construção Sem Nome";
         }
         this.nome = nome;
 
-        if (arquiteto.isEmpty() || arquiteto == null) {
+        if (arquiteto == null || arquiteto.isEmpty()) {
             arquiteto = "Arquiteto Desconhecido";
         }
         this.arquiteto = arquiteto;
 
-        if (integradade <= 0) {
-            integradade = 1;
+        if (integridade <= 0) {
+            integridade = 1;
         }
-        this.integradade = integradade;
+        this.integridade = integridade;
 
         if (nucleo == null) {
             nucleo = new NucleoArquitetonico("Núcleo Emergencial", 1);
         }
         this.nucleo = nucleo;
 
-        if (sistemaPrincipal.isEmpty() || sistemaPrincipal == null) {
+        if (sistemaPrincipal == null || sistemaPrincipal.isEmpty()) {
             sistemaPrincipal = "Sistema Não Identificado";
         }
         this.sistemaPrincipal = sistemaPrincipal;
@@ -49,8 +49,8 @@ public abstract class Construcao {
         return arquiteto;
     }
 
-    public int getIntegradade() {
-        return integradade;
+    public int getIntegridade() {
+        return integridade;
     }
 
     public NucleoArquitetonico getNucleo() {
@@ -68,7 +68,7 @@ public abstract class Construcao {
     public void apresentarProjeto() {
         System.out.println("Nome: " + nome);
         System.out.println("Arquiteto: " + arquiteto);
-        System.out.println("Integridade: " + integradade);
+        System.out.println("Integridade: " + integridade);
         System.out.println("Sistema Principal: " + sistemaPrincipal);
         System.out.println("Custo de Ativação: " + custoAtivacao);
         System.out.println("Identificação do Núcleo: " + nucleo.getIdentificacao());

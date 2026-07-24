@@ -4,7 +4,7 @@ public class NucleoArquitetonico {
     private int energia;
 
     NucleoArquitetonico(String identificacao, int energia) {
-        if (identificacao.isEmpty() || identificacao == null) {
+        if (identificacao == null || identificacao.isEmpty()) {
             identificacao = "Núcleo Desconhecido";
             System.out.println("[Núcleo] Identificação inválida. Valor padrão aplicado: Núcleo Desconhecido.");
         }

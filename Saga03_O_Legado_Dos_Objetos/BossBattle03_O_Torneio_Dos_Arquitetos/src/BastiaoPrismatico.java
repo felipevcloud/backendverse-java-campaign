@@ -8,7 +8,7 @@ public class BastiaoPrismatico extends Construcao implements Defensora, Expansor
     @Override
     public boolean ativarSistemaPrincipal() {
         if (getNucleo().consumirEnergia(getCustoAtivacao())) {
-            System.out.println(getNome() + " ativa o sistema Domínio Prismático!\n" +
+            System.out.println(getNome() + " ativa o sistema " + getSistemaPrincipal() + "\n" +
                     "Luz e matéria redesenham o campo arquitetônico.\n");
             return true;
         } else {
