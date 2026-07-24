@@ -6,15 +6,15 @@ Saga III — O Legado dos Objetos
 
 ## Episódio Atual
 
-Episode 09 — O Ciclo das Almas no Heap
+Boss Battle III — O Torneio dos Arquitetos
 
 ## Última Missão
 
-Construção do Santuário das Almas Digitais utilizando construtores, sobrecarga, this, super, validação de estado inicial, polimorfismo e ciclo de vida de referências no heap.
+Construção do Torneio dos Arquitetos, integrando herança, composição, classes abstratas, interfaces, múltiplos contratos, construtores, polimorfismo, controle de energia e testes manuais.
 
 ## Próxima Missão
 
-Boss Battle III — O Torneio dos Arquitetos
+Episode 10 — As Leis do Mundo Estático
 
 ## Habilidades Desbloqueadas
 
@@ -72,11 +72,18 @@ Boss Battle III — O Torneio dos Arquitetos
 * Identificar referências mantidas por variáveis e coleções
 * Identificar quando um objeto se torna elegível para garbage collection
 * Controlar a criação e a consistência inicial dos objetos
+* Integrar herança, composição, abstrações, interfaces e construtores em um sistema completo
+* Distribuir responsabilidades entre abstração, subclasses, contratos, objetos compostos e coordenadores
+* Centralizar regras de estado no objeto responsável
+* Remover a mesma referência de múltiplas coleções sem identificar sua classe concreta
+* Validar sistemas orientados a objetos por meio de testes manuais de estado e retorno
+* Avaliar e remover abstrações desnecessárias durante a modelagem
 
 ## Boss Battles Concluídas
 
 * Boss Battle I — O Registro da Academia
 * Boss Battle II — O Primeiro Sistema da Guilda
+* Boss Battle III — O Torneio dos Arquitetos
 
 ## Observações
 
@@ -90,22 +97,32 @@ No Episode 08, a Arena Prismática reuniu participantes com capacidades diferent
 
 O Conselho Prismático utilizou coleções separadas de Participante, Transformavel e Invocador para coordenar técnicas especiais, transformações e invocações sem depender das classes concretas.
 
-A validação de energia foi centralizada na classe abstrata Participante. Técnicas válidas consumiram energia, enquanto a técnica recusada preservou corretamente o estado do participante.
-
 No Episode 09, o Santuário das Almas Digitais utilizou construtores para garantir que todas as entidades nascessem em um estado válido.
 
-A classe Kami demonstrou sobrecarga de construtores, reutilização com this(...) e inicialização da superclasse com super(...). Yokai e Akuma também participaram da cadeia de inicialização por herança.
+A classe Kami demonstrou sobrecarga de construtores, reutilização com this(...) e inicialização da superclasse com super(...). A remoção do Yokai da coleção e a anulação de sua referência local demonstraram o ciclo de vida das referências no heap.
 
-A remoção do Yokai da coleção e a anulação de sua referência local demonstraram que objetos se tornam elegíveis para coleta apenas quando não existem mais referências alcançáveis apontando para eles.
+Na Boss Battle III, o Torneio dos Arquitetos integrou todas as habilidades da Saga III. Cada Construção possui um NucleoArquitetonico responsável por controlar sua própria energia.
+
+FortalezaAegis, CidadeNexus e BastiaoPrismatico herdaram a abstração Construcao e implementaram os contratos Defensora e Expansora conforme suas capacidades.
+
+O ConselhoDosArquitetos coordenou construções, defensoras e expansoras por meio de três ArrayLists tipados por abstrações, sem utilizar instanceof ou identificar classes concretas.
+
+A remoção de uma construção atualizou as três coleções utilizando a mesma referência. Ativações válidas consumiram energia, enquanto ativações recusadas preservaram corretamente o estado do núcleo.
+
+A modelagem da campanha passará a ser conduzida de forma mais conversacional, progressiva e proporcional à complexidade do projeto, evitando questionários extensos e repetição desnecessária.
 
 ## Última Revisão Técnica
 
-Episode 09 aprovado. O projeto compila e executa corretamente, utiliza construtores para validar e inicializar o estado obrigatório das entidades e impede que objetos concretos terminem sua criação com nome ou energia inválidos.
+Boss Battle III aprovada. O projeto compila e executa corretamente, e os treze testes manuais apresentam PASS.
 
-Kami possui construtores padrão e personalizado. O construtor padrão utiliza this(...) para reutilizar a inicialização, enquanto os construtores das três entidades utilizam super(...) para encaminhar nome e energia à classe abstrata Entidade.
+Construcao é uma classe abstrata e possui uma relação de composição com NucleoArquitetonico. O núcleo valida seus dados durante a construção, controla sua energia e retorna o resultado das solicitações de consumo.
 
-A ordem da cadeia de construtores é apresentada corretamente no console. As entidades são armazenadas e coordenadas polimorficamente por meio de um ArrayList de Entidade.
+FortalezaAegis utiliza sobrecarga de construtores, this(...) e super(...). CidadeNexus e BastiaoPrismatico também inicializam corretamente o estado compartilhado por meio do construtor da superclasse.
 
-O Yokai é removido da coleção antes de sua referência local receber null. O programa explica corretamente que o objeto se torna elegível para garbage collection, sem afirmar que a coleta ou destruição ocorreu imediatamente.
+As interfaces Defensora e Expansora representam capacidades independentes. BastiaoPrismatico implementa os dois contratos e é armazenado nas duas coleções correspondentes.
 
-A validação de nomes vazios utiliza comparação por conteúdo e funciona corretamente para literais vazios, novas instâncias de String vazias e referências null.
+ConselhoDosArquitetos coordena ArrayList de Construcao, Defensora e Expansora sem utilizar instanceof, getClass ou comparações de classes concretas.
+
+O sistema trata corretamente referências null, utiliza comparação por conteúdo para Strings, respeita sistemas principais personalizados, preserva energia após ativações recusadas e remove construções de todas as coleções relevantes.
+
+A Saga III foi concluída com domínio inicial dos pilares da orientação a objetos, modelagem de responsabilidades, abstrações, contratos, construtores e composição.
