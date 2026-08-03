@@ -2,19 +2,19 @@
 
 ## Saga Atual
 
-Saga III — O Legado dos Objetos
+Saga IV — O Arsenal do Desenvolvedor
 
 ## Episódio Atual
 
-Boss Battle III — O Torneio dos Arquitetos
+Episode 10 — As Leis do Mundo Estático
 
 ## Última Missão
 
-Construção do Torneio dos Arquitetos, integrando herança, composição, classes abstratas, interfaces, múltiplos contratos, construtores, polimorfismo, controle de energia e testes manuais.
+Construção do Arsenal Dimensional utilizando estado de instância, membros static, constantes, classes utilitárias, wrappers, autoboxing, conversões numéricas, métodos da classe Math e formatação.
 
 ## Próxima Missão
 
-Episode 10 — As Leis do Mundo Estático
+Episode 11 — O Inventário dos Caçadores
 
 ## Habilidades Desbloqueadas
 
@@ -78,6 +78,20 @@ Episode 10 — As Leis do Mundo Estático
 * Remover a mesma referência de múltiplas coleções sem identificar sua classe concreta
 * Validar sistemas orientados a objetos por meio de testes manuais de estado e retorno
 * Avaliar e remover abstrações desnecessárias durante a modelagem
+* Diferenciar estado de instância e estado compartilhado
+* Criar atributos e métodos static
+* Declarar constantes universais com static final
+* Manter contadores compartilhados entre instâncias
+* Criar classes utilitárias sem estado próprio
+* Utilizar wrappers para conversões numéricas
+* Converter String para int e double
+* Compreender autoboxing e unboxing
+* Armazenar valores numéricos em ArrayList de wrappers
+* Arredondar valores com Math.round()
+* Limitar resultados com Math.min()
+* Comparar valores com Math.max() e Math.min()
+* Formatar números com String.format()
+* Reconhecer estado compartilhado e utilizar ferramentas numéricas da linguagem
 
 ## Boss Battles Concluídas
 
@@ -101,7 +115,7 @@ No Episode 09, o Santuário das Almas Digitais utilizou construtores para garant
 
 A classe Kami demonstrou sobrecarga de construtores, reutilização com this(...) e inicialização da superclasse com super(...). A remoção do Yokai da coleção e a anulação de sua referência local demonstraram o ciclo de vida das referências no heap.
 
-Na Boss Battle III, o Torneio dos Arquitetos integrou todas as habilidades da Saga III. Cada Construção possui um NucleoArquitetonico responsável por controlar sua própria energia.
+Na Boss Battle III, o Torneio dos Arquitetos integrou todas as habilidades da Saga III. Cada Construcao possui um NucleoArquitetonico responsável por controlar sua própria energia.
 
 FortalezaAegis, CidadeNexus e BastiaoPrismatico herdaram a abstração Construcao e implementaram os contratos Defensora e Expansora conforme suas capacidades.
 
@@ -109,20 +123,24 @@ O ConselhoDosArquitetos coordenou construções, defensoras e expansoras por mei
 
 A remoção de uma construção atualizou as três coleções utilizando a mesma referência. Ativações válidas consumiram energia, enquanto ativações recusadas preservaram corretamente o estado do núcleo.
 
-A modelagem da campanha passará a ser conduzida de forma mais conversacional, progressiva e proporcional à complexidade do projeto, evitando questionários extensos e repetição desnecessária.
+A modelagem da campanha passou a ser conduzida de forma mais conversacional, progressiva e proporcional à complexidade do projeto, evitando questionários extensos e repetição desnecessária.
+
+A Saga IV foi iniciada com o Arsenal Dimensional. Cada Artefato possui nome, poder base e multiplicador próprios, enquanto a classe compartilha o contador total de objetos criados e a constante LIMITE_MAXIMO.
+
+A CalculadoraDoArsenal foi implementada como uma classe utilitária sem estado. Os poderes foram calculados, arredondados e limitados por métodos estáticos da classe Math.
+
+Os valores de entrada foram convertidos com Integer.parseInt() e Double.parseDouble(). Os resultados primitivos foram armazenados em um ArrayList de Integer por meio de autoboxing.
 
 ## Última Revisão Técnica
 
-Boss Battle III aprovada. O projeto compila e executa corretamente, e os treze testes manuais apresentam PASS.
+Episode 10 aprovado. O projeto compila e executa corretamente, diferencia estado individual, estado compartilhado e constantes universais.
 
-Construcao é uma classe abstrata e possui uma relação de composição com NucleoArquitetonico. O núcleo valida seus dados durante a construção, controla sua energia e retorna o resultado das solicitações de consumo.
+Nome, poder base e multiplicador pertencem a cada instância de Artefato. O contador totalDeArtefatos é estático, incrementado durante a construção e compartilhado por todas as instâncias.
 
-FortalezaAegis utiliza sobrecarga de construtores, this(...) e super(...). CidadeNexus e BastiaoPrismatico também inicializam corretamente o estado compartilhado por meio do construtor da superclasse.
+LIMITE_MAXIMO é uma constante public static final com valor 1000. A CalculadoraDoArsenal utiliza um método estático e não precisa ser instanciada.
 
-As interfaces Defensora e Expansora representam capacidades independentes. BastiaoPrismatico implementa os dois contratos e é armazenado nas duas coleções correspondentes.
+Os dados numéricos são convertidos com Integer.parseInt() e Double.parseDouble(). Os poderes finais são armazenados em um ArrayList de Integer, demonstrando autoboxing e unboxing.
 
-ConselhoDosArquitetos coordena ArrayList de Construcao, Defensora e Expansora sem utilizar instanceof, getClass ou comparações de classes concretas.
+Math.round() arredonda os resultados, Math.min() aplica o limite universal e Math.max() e Math.min() encontram os extremos do relatório.
 
-O sistema trata corretamente referências null, utiliza comparação por conteúdo para Strings, respeita sistemas principais personalizados, preserva energia após ativações recusadas e remove construções de todas as coleções relevantes.
-
-A Saga III foi concluída com domínio inicial dos pilares da orientação a objetos, modelagem de responsabilidades, abstrações, contratos, construtores e composição.
+Os poderes calculados foram 630, 1000 e 313. O sistema preserva o alinhamento entre artefatos e resultados pelo índice e apresenta os valores de forma legível com String.format().
