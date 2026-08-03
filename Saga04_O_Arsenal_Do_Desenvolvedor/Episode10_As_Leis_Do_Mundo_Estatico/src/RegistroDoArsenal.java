@@ -40,7 +40,7 @@ public class RegistroDoArsenal {
         System.out.println("Quantidade Registrada: " + quantidadeRegistrada());
         System.out.println("Total de artefatos criados: " + Artefato.getTotalDeArtefatos());
         System.out.println("Limite máximo universal: " + Artefato.LIMITE_MAXIMO);
-        int maximo = 0, minimo = 1000;
+        int maximo = 0, minimo = Artefato.LIMITE_MAXIMO;
         for (int i = 0; i < resultados.size(); i++) {
             minimo = Math.min(minimo, resultados.get(i));
             maximo = Math.max(maximo, resultados.get(i));
