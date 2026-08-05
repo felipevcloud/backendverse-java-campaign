@@ -59,7 +59,14 @@ public class ItemDeCaca implements Comparable<ItemDeCaca>{
 
     @Override
     public boolean equals(Object objeto) {
-        return this == objeto || this.codigo.equals(((ItemDeCaca) objeto).codigo);
+        if (this == objeto) {
+            return true;
+        } else if (objeto != null && this.getClass() == objeto.getClass()) {
+            ItemDeCaca item = (ItemDeCaca) objeto;
+            return this.codigo.equals(item.codigo);
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -69,7 +76,7 @@ public class ItemDeCaca implements Comparable<ItemDeCaca>{
 
     @Override
     public int compareTo(ItemDeCaca o) {
-        if (this.nome.equals(o.nome)) {
+        if (this.nome.equalsIgnoreCase(o.nome)) {
             return this.codigo.compareTo(o.codigo);
         }
         return nome.compareTo(o.nome);

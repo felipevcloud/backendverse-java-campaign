@@ -15,9 +15,9 @@ public class InventarioDosCacadores {
         InventarioDaGuilda inventario = new InventarioDaGuilda();
 
         inventario.registrarItem(arco);
-        inventario.registrarItem(essencia);
         inventario.registrarItem(grimorio);
         inventario.registrarItem(lamina);
+        inventario.registrarItem(essencia);
         inventario.registrarItem(fakeGrimorio);
         inventario.registrarItem(fakeLamina);
         inventario.registrarItem(null);
@@ -30,7 +30,7 @@ public class InventarioDosCacadores {
 
         inventario.apresentarRankingDePoder();
 
-        System.out.println("\n=== QUANTIDADES ARMAZENADAS ==\n");
+        System.out.println("\n=== QUANTIDADES ARMAZENADAS ===\n");
 
         inventario.apresentarQuantidades();
 

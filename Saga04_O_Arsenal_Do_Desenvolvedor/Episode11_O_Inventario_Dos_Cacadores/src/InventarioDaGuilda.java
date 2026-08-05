@@ -80,6 +80,6 @@ public class InventarioDaGuilda {
         System.out.println("Tipos no catálogo:  " + catalogo.size());
         System.out.println("Itens únicos no Set: " + itensUnicos.size());
         System.out.println("Total de unidades armazenadas: " + quantidadeTotalDeUnidades());
-        System.out.println("Valor total do inventário: " + calcularValorTotal());
+        System.out.println("Valor total do inventário: " + String.format("%.2f", calcularValorTotal()));
     }
 }
