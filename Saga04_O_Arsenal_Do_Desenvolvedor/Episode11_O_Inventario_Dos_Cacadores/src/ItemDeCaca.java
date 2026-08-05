@@ -79,6 +79,6 @@ public class ItemDeCaca implements Comparable<ItemDeCaca>{
         if (this.nome.equalsIgnoreCase(o.nome)) {
             return this.codigo.compareTo(o.codigo);
         }
-        return nome.compareTo(o.nome);
+        return nome.compareToIgnoreCase(o.nome);
     }
 }
