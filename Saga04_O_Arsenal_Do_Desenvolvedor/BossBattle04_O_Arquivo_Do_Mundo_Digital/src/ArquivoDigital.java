@@ -94,11 +94,13 @@ public class ArquivoDigital {
     public Digimon encontrarMaisAvistado() {
         Digimon avistado = catalogo.get(0);
         for (Digimon digimon : catalogo) {
-            if (avistamentos.get(digimon) == avistamentos.get(avistado)) {
+            int quantidadeDigimon = avistamentos.get(digimon);
+            int quantidadeAvistado = avistamentos.get(avistado);
+            if (quantidadeDigimon == quantidadeAvistado) {
                 if (digimon.compareTo(avistado) < 0) {
                     avistado = digimon;
                 }
-            } else if (avistamentos.get(digimon) > avistamentos.get(avistado)){
+            } else if (quantidadeDigimon > quantidadeAvistado){
                 avistado = digimon;
             }
         }
