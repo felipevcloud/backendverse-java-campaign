@@ -136,3 +136,15 @@ Ao final da execução:
 - WarGreymon deve possuir 2 avistamentos.
 
 MetalGreymon deve vencer o empate de mais avistado devido à ordem natural.
+
+## Como executar
+
+1. Abrir o projeto no IntelliJ.
+2. Executar `ArquivoDoMundoDigital`.
+3. Observar os registros, buscas, ordenações e relatório final.
+
+## Resultado esperado
+
+O Arquivo Digital deve possuir 5 tipos únicos, 7 avistamentos e 7 objetos Digimon criados.
+
+MetalGreymon e WarGreymon devem possuir 2 avistamentos cada, com MetalGreymon vencendo o desempate pela ordem natural.

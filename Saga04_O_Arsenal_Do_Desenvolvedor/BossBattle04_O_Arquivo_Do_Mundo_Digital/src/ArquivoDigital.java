@@ -48,8 +48,11 @@ public class ArquivoDigital {
 
     public List<Digimon> buscarPorNome(String termo) {
         List<Digimon> resultados = new ArrayList<>();
+        if (termo == null || termo.isEmpty()) {
+            return resultados;
+        }
         for (Digimon digimon : catalogo) {
-            if (digimon.getNome().toLowerCase().contains(termo)) {
+            if (digimon.getNome().toLowerCase().contains(termo.toLowerCase())) {
                 resultados.add(digimon);
             }
         }
@@ -92,7 +95,9 @@ public class ArquivoDigital {
         Digimon avistado = catalogo.get(0);
         for (Digimon digimon : catalogo) {
             if (avistamentos.get(digimon) == avistamentos.get(avistado)) {
-                avistado.compareTo(digimon);
+                if (digimon.compareTo(avistado) < 0) {
+                    avistado = digimon;
+                }
             } else if (avistamentos.get(digimon) > avistamentos.get(avistado)){
                 avistado = digimon;
             }

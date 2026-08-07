@@ -40,6 +40,10 @@ public class ArquivoDoMundoDigital {
 
         arquivoDigital.apresentarCatalogo();
 
+        System.out.println("\n=== RANKING DE AMEAÇA ===\n");
+
+        arquivoDigital.apresentarRankingDeAmeaca();
+
         System.out.println("\n=== AVISTAMENTOS ===\n");
 
         arquivoDigital.apresentarAvistamentos();
