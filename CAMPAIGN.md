@@ -2,7 +2,7 @@
 
 ## Playbook vigente
 
-Backendverse Playbook v1.1
+Backendverse Playbook v1.3.1
 
 Progresso anterior preservado.
 
@@ -12,27 +12,61 @@ Saga V — O Fluxo e o Caos Controlado
 
 ## Episódio Atual
 
-Episode 12 — A Respiração dos Fluxos
+Nenhum Episode em andamento.
 
-Aguardando `MISSION START`.
+Episode 13 — O Guardião das Exceções foi oficialmente concluído sob o Backendverse Playbook v1.3.1.
+
+## Status Atual
+
+O Episode 13 foi encerrado oficialmente depois que o aprendiz enviou `MISSION ACCOMPLISHED`.
+
+O Mapa de Maestria final possui nove itens em `✓`, nenhum em `◐` e nenhum em `○`.
+
+Antes do encerramento, o aprendiz solicitou uma revisão completa. A revisão retomou fluxo de `try`/`catch`, especificidade, `finally`, checked e unchecked, criação e lançamento de exceptions, propagação e decisões entre tratar e propagar. Lacunas de formulação e de responsabilidade entre métodos receberam Patches curtos e foram recuperadas em contextos diferentes.
+
+Não houve projeto independente nem artefato executável. As evidências aprovadas consistiram em previsões, rastreamentos, explicações, pequenos trechos Java e decisões técnicas. Nenhuma compilação ou execução era necessária para esta missão.
+
+Saga V — O Fluxo e o Caos Controlado permanece em andamento.
+
+Próximo grande marco disponível: Boss Battle V — A Graduação do Core Java. O marco ainda não foi iniciado.
+
+## Mapa de Maestria Final — Episode 13
+
+- ✓ propósito de exceptions
+- ✓ fluxo de `try` e `catch`
+- ✓ múltiplos tratamentos e especificidade
+- ✓ `finally` e liberação de recursos
+- ✓ checked versus unchecked
+- ✓ criação e lançamento com `throw`
+- ✓ declaração e propagação com `throws`
+- ✓ escolha entre tratar e propagar
+- ✓ preservação de comportamento válido em casos de erro
+
+## Evidência final do Episode 13
+
+O aprendiz distinguiu checked e unchecked pela hierarquia, reconheceu a obrigação de captura ou declaração imposta pelo compilador e demonstrou que um `throws` explícito não altera a classificação de uma exception.
+
+Também criou uma exception customizada com mensagem, separou a criação do objeto com `new` de seu lançamento com `throw`, declarou propagação com `throws` e rastreou corretamente o efeito de exceptions capturadas e não capturadas sobre o fluxo.
+
+Na revisão final, consolidou o critério para tratar ou propagar: um método trata quando consegue cumprir sua promessa por uma alternativa válida autorizada pela regra; quando não consegue produzir um resultado correto, propaga. Fallbacks válidos preservaram o comportamento do sistema sem esconder falhas irrecuperáveis.
 
 ## Última Missão
 
-Boss Battle IV — O Arquivo do Mundo Digital
+Episode 13 — O Guardião das Exceções
 
-Construção de um Arquivo Digital responsável por catalogar Digimon únicos, registrar múltiplos avistamentos, realizar buscas e apresentar diferentes ordenações.
+Missão concluída com todos os nove itens essenciais do Mapa de Maestria em `✓`.
 
-O projeto integrou `List`, `Set`, `Map`, generics, identidade com `equals()` e `hashCode()`, ordem natural com `Comparable`, ordem alternativa com `Comparator`, busca por código, busca parcial por nome, `static`, wrappers, autoboxing e unboxing.
+Foram demonstrados representação, lançamento, declaração, propagação, captura e recuperação de falhas, incluindo hierarquia, especificidade, `finally`, checked e unchecked e decisões responsáveis entre tratar e propagar.
 
-Foram construídos sete objetos `Digimon`, representando cinco entidades únicas e sete avistamentos totais.
+O Episode não exigiu projeto independente. A evidência aprovada consistiu em previsões, explicações, rastreamentos, pequenos trechos Java e decisões técnicas.
 
 ## Próxima Missão
 
-Episode 12 — A Respiração dos Fluxos
+Boss Battle V — A Graduação do Core Java.
 
-Chapter 12 — Lambdas and Streams.
+O marco está disponível, mas ainda não foi iniciado.
 
-A missão somente poderá ser iniciada após:
+Para iniciá-lo, será necessário um novo:
 
 `MISSION START`
 
@@ -101,6 +135,21 @@ A missão somente poderá ser iniciada após:
 * Criar desempates determinísticos
 * Não depender da ordem interna de HashSet e HashMap
 * Integrar Collections, generics, busca, ordenação e identidade em um único sistema
+* Escrever expressões lambda para comportamentos funcionais
+* Relacionar interfaces funcionais ao uso de lambdas
+* Compor pipelines com `filter`, `map` e operações terminais
+* Compreender avaliação lazy e execução elemento a elemento em Streams
+* Materializar Streams com `toList` e estratégias de `collect`
+* Agregar elementos com `reduce`
+* Representar ausência e definir fallbacks com `Optional`
+* Representar falhas com exceptions
+* Controlar o fluxo com `try`, `catch` e tratamentos específicos
+* Utilizar `finally` para garantir ações de encerramento
+* Distinguir checked e unchecked pela hierarquia e pela obrigação do compilador
+* Criar e lançar exceptions customizadas com `new` e `throw`
+* Declarar e propagar falhas com `throws`
+* Escolher entre tratar e propagar conforme a responsabilidade do método
+* Preservar comportamento válido por recuperação e fallback
 
 ## Boss Battles Concluídas
 
@@ -121,6 +170,118 @@ Nenhuma até o momento.
 * Boss Battle IV — O Arquivo do Mundo Digital
 
 ## Observações
+
+### Migração metodológica para v1.3
+
+Episodes 01–11 permanecem concluídos exatamente como registrados.
+
+Boss Battles I–IV permanecem concluídas exatamente como registradas.
+
+Saga V — O Fluxo e o Caos Controlado permanece como a Saga atual.
+
+Episode 12 — A Respiração dos Fluxos foi oficialmente iniciado sob a metodologia v1.3.
+
+Episode 12 foi reiniciado pedagogicamente pelo diagnóstico da v1.3, sem presumir conhecimento zero e sem apagar exposição ou conhecimento anterior.
+
+Nenhum trabalho novo foi registrado como concluído durante a migração.
+
+### Piloto v1.3 — evidências registradas
+
+O primeiro bloco confirmou leitura, previsão e composição de pipelines em interações curtas.
+
+O segundo bloco confirmou construção de lambdas, compreensão de interfaces funcionais, relação entre `Predicate` e `filter`, relação entre `Function` e `map`, execução lazy, acionamento por operações terminais e aplicação de `reduce` com identidade e acumulador.
+
+Uma concepção equivocada sobre a execução imediata de operações intermediárias foi diagnosticada, recebeu um Patch curto e foi recuperada em nova previsão antes de aparecer corretamente em aplicação posterior.
+
+O aprendiz relatou que a experiência ficou bem mais leve e que continuaria tranquilamente.
+
+O piloto também revelou um ajuste necessário: o Sensei deverá avaliar o significado e o raciocínio da resposta antes de cobrar formulação específica. Vocabulário próprio semanticamente correto deverá ser aceito; ambiguidades e prováveis lapsos deverão receber esclarecimento; correção formal será exigida quando a diferença alterar o comportamento técnico.
+
+### Piloto v1.3 — REENTRY e conclusão do mapa
+
+O `REENTRY` revelou ferrugem inicial sobre a execução elemento a elemento de operações intermediárias. Depois de um Patch curto, o aprendiz recuperou o modelo em novos rastreamentos e voltou a aplicá-lo corretamente em um pipeline integrado.
+
+Em `collect` e `toList`, o aprendiz distinguiu a materialização do Stream da estratégia fornecida por um `Collector` e transferiu o raciocínio para `Collectors.toSet()`, incluindo o efeito sobre elementos duplicados.
+
+Em `Optional`, uma concepção inicial que associava ausência a `null` recebeu Patch. A recuperação foi demonstrada pela distinção entre `Optional.empty()` e `Optional.of(...)`, pelo uso de `orElse()` nos caminhos com e sem valor e pela composição de `filter`, `findFirst()` e fallback.
+
+O Revisit final integrou `filter`, `map`, operação terminal, `Optional` e `orElse()` em um novo contexto, produzindo corretamente o resultado e a transformação intermediária.
+
+A auditoria confirmou todos os itens essenciais do Episode 12 em `✓`. As evidências consistiram em previsões, explicações e pequenos pipelines Java; nenhum projeto executável foi exigido ou submetido neste bloco.
+
+`MISSION ACCOMPLISHED` foi liberado após a auditoria das evidências e posteriormente enviado pelo aprendiz. O Episode 12 está oficialmente concluído.
+
+### Conclusão oficial do Episode 12
+
+O Mapa de Maestria final foi consolidado com todos os itens essenciais em `✓`:
+
+- expressões lambda;
+- interfaces funcionais;
+- modelo mental de Stream;
+- `filter`;
+- `map`;
+- operações terminais;
+- `collect` e `toList`;
+- `reduce`;
+- `Optional`;
+- composição de pipelines.
+
+O piloto confirmou que blocos menores, uma interação significativa por vez e Patches proporcionais podem preservar rigor técnico enquanto reduzem a resistência para começar e continuar.
+
+O feedback sobre significado antes de formulação foi incorporado ao método. As recuperações posteriores confirmaram que esclarecimento proporcional funciona melhor do que exigir palavras específicas.
+
+Episode 13 — O Guardião das Exceções foi posteriormente aberto.
+
+### Episode 13 — primeiro bloco e ajuste de ritmo
+
+O primeiro bloco trabalhou propósito e fluxo de exceptions, `try`/`catch`, múltiplos tratamentos, hierarquia, `finally`, checked/unchecked, `throw` e `throws`.
+
+O aprendiz previu corretamente a interrupção do fluxo por `ArithmeticException`, o caminho `A → C → D` em tratamento com `try`/`catch` e a falha de parsing representada por `NumberFormatException`.
+
+Também relacionou a ordem de `catch` à hierarquia e ao polimorfismo, explicou por que um tratamento genérico anterior torna um tratamento específico inalcançável e reconheceu a execução de `finally` tanto no caminho normal quanto no caminho excepcional.
+
+Checked e unchecked exceptions exigiram Patch. A recuperação parcial demonstrou que `IOException` precisa ser tratada ou propagada, enquanto `ArithmeticException` e `IllegalArgumentException` são unchecked. Ainda será necessária transferência em outro contexto antes de `✓`.
+
+Na propagação pela pilha, o aprendiz identificou que uma `IOException` deixa de subir quando é capturada e distinguiu corretamente `throws IOException`, que declara possibilidade de escape, de `throw new IOException(...)`, que lança efetivamente a exception. O uso de `throw` permanece em `◐` até aplicação ou transferência suficiente.
+
+O bloco ficou longo demais e não ofereceu o corte visível exigido pela intenção da v1.3. O aprendiz precisou pedir a pausa e o estado do mapa. Esse feedback originou o contrato explícito de bloco do Playbook: alvo limitado, critério de encerramento, mapa visível e proibição de iniciar outro Probe no fechamento.
+
+Depois desse ajuste, o fluxo operacional foi unificado em um único Sensei no Work, responsável por ensinar, revisar evidências e atualizar diretamente os arquivos oficiais. O aprendiz não precisa transportar resumos nem sincronizar o estado manualmente.
+
+Nenhum arquivo executável foi submetido ou inspecionado. Naquele ponto, o Episode permaneceu aberto, sem liberação de `MISSION ACCOMPLISHED`.
+
+### Episode 13 — decisão entre tratar e propagar
+
+Em um cenário de cobrança, o aprendiz identificou `finalizarPedido()` como o ponto adequado para tratar a falha porque esse método conhece a regra de negócio aplicável.
+
+Em um cenário diferente, identificou `buscarProduto()` como o ponto capaz de reagir à indisponibilidade do cache e preservar o comportamento válido por meio de fallback para o banco.
+
+A transferência entre regra de negócio e recuperação técnica confirmou em `✓`:
+
+- escolha entre tratar e propagar;
+- preservação de comportamento válido em casos de erro.
+
+O bloco foi encerrado antes de iniciar o próximo alvo. Depois de o aprendiz indicar que desejava continuar, foi aberto o bloco de checked versus unchecked. Seu primeiro Probe não recebeu resposta antes da troca planejada de chat.
+
+O Playbook v1.3.1 foi adotado sem reiniciar a missão nem alterar evidências anteriores. A correção fortalece a voz conversacional do Sensei e diferencia personalidade real de ambientação cosmética.
+
+### Conclusão oficial do Episode 13
+
+O Episode foi retomado por `REENTRY` a partir do snapshot de continuidade, sem novo `MISSION START` e sem perda das evidências anteriores.
+
+Checked e unchecked foram consolidadas pela hierarquia direta e indireta. O aprendiz demonstrou que exceptions descendentes de `RuntimeException` permanecem unchecked mesmo quando declaradas com `throws`, enquanto uma checked precisa ser capturada ou declarada pelo código chamador.
+
+Na aplicação de `throw`, o aprendiz criou `EvolucaoBloqueadaException`, recebeu uma mensagem em seu construtor, encaminhou-a com `super(mensagem)` e lançou a instância quando a regra de nível mínimo foi violada. Também separou corretamente o papel de `new`, que cria o objeto, do papel de `throw`, que o lança.
+
+Antes de encerrar, o aprendiz solicitou uma revisão completa. Foram revisitados fluxo excepcional, retornos combinados com `finally`, ordem de tratamentos, checked e unchecked, `throw`, `throws`, propagação e recuperação.
+
+A revisão revelou imprecisões sobre o fluxo depois de um `catch`, a diferença entre criação e lançamento e a relação entre classificação da exception e interrupção em runtime. Cada ponto recebeu Patch curto e foi recuperado em novo contexto.
+
+Um cenário de revisão utilizou prematuramente vocabulário de camadas ainda não ensinado e tornou a escolha entre tratar e propagar desnecessariamente confusa. O item foi reaberto em `◐` e reconstruído no nível correto por meio das responsabilidades de métodos comuns. A transferência final confirmou que um método trata quando conhece uma alternativa válida compatível com sua promessa; sem essa alternativa, ele propaga.
+
+O Mapa de Maestria final foi consolidado com todos os nove itens essenciais em `✓`. Não houve projeto independente nem artefato executável, e nenhuma compilação ou execução foi necessária para as evidências aprovadas.
+
+`MISSION ACCOMPLISHED` foi enviado pelo aprendiz. O Episode 13 está oficialmente concluído e Boss Battle V — A Graduação do Core Java está disponível para um futuro `MISSION START`.
 
 ### Saga I — O Despertar do Código
 

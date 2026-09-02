@@ -4,7 +4,24 @@ A structured Java learning campaign from fundamentals to backend development.
 
 This repository documents my journey through the **Backendverse Java Campaign**, a project-based learning path designed to take me from Java fundamentals to the level of **Java Backend Developer Junior**.
 
-The campaign is based primarily on **Head First Java / Use a Cabeça Java**, using each chapter as the foundation for practical missions, code reviews, and portfolio projects.
+The campaign starts from **Head First Java / Use a Cabeça Java, 3rd edition** and expands into the professional backend ecosystem through practical missions, technical reviews, Boss Battles, and portfolio projects.
+
+---
+
+## Current Campaign State
+
+| Item | Current state |
+| --- | --- |
+| Official methodology | Backendverse Playbook v1.3.1 |
+| Current Saga | Saga V — O Fluxo e o Caos Controlado |
+| Episode in progress | None |
+| Last completed mission | Episode 13 — O Guardião das Exceções |
+| Next mission | Boss Battle V — A Graduação do Core Java |
+| Boss Battles completed | 4 |
+
+Episode 13 was completed with all nine essential mastery items approved. Boss Battle V is available, but has not yet been started.
+
+Episodes 12 and 13 were evidence-based learning missions and did not require standalone executable artifacts. Their progress, mastery evidence, and completion records live in [`CAMPAIGN.md`](CAMPAIGN.md), so no empty Episode directories are maintained for them.
 
 ---
 
@@ -37,9 +54,9 @@ This campaign focuses on:
 The campaign is organized into:
 
 * **Sagas** — large learning arcs;
-* **Episodes** — chapter-based learning units;
-* **Missions** — practical projects for each episode;
-* **Boss Battles** — larger projects that combine several concepts;
+* **Episodes** — learning units focused on specific concepts;
+* **Missions** — practical work and evidence for each Episode;
+* **Boss Battles** — larger projects that integrate several concepts;
 * **Final Exam** — a complete backend portfolio project.
 
 ---
@@ -48,37 +65,32 @@ The campaign is organized into:
 
 ```text
 backendverse-java-campaign/
-│
 ├── PLAYBOOK.md
 ├── CAMPAIGN.md
 ├── README.md
-│
 ├── Saga01_O_Despertar_Do_Codigo/
-│   ├── Episode01_O_Primeiro_Pulso/
-│   ├── Episode02_A_Cidade_Dos_Objetos/
-│   └── Episode03_O_Chakra_Das_Referencias/
-│
 ├── Saga02_O_Caminho_Das_Tecnicas/
 ├── Saga03_O_Legado_Dos_Objetos/
-├── Saga04_O_Arsenal_Do_Desenvolvedor/
-└── ...
+└── Saga04_O_Arsenal_Do_Desenvolvedor/
 ```
+
+The artifact tree currently ends with Episode 11 and Boss Battle IV. Saga V progress is recorded in `CAMPAIGN.md` until a mission produces an artifact that belongs in the repository.
 
 ---
 
 ## Main Files
 
-### `PLAYBOOK.md`
+### [`PLAYBOOK.md`](PLAYBOOK.md)
 
-Contains the official rules, structure, roadmap, and learning philosophy of the Backendverse Java Campaign.
+The official living document for the campaign. Version 1.3.1 defines the methodology, rules, roadmap, learning philosophy, evidence model, review process, and documentation standards.
 
-### `CAMPAIGN.md`
+### [`CAMPAIGN.md`](CAMPAIGN.md)
 
-Tracks the current state of the campaign, including the current Saga, current Episode, completed missions, unlocked skills, and technical review notes.
+The canonical progress record. It contains the current Saga, completed missions, mastery evidence, unlocked skills, next mission, and technical review history.
 
-### Episode `README.md` files
+### Episode and Boss Battle `README.md` files
 
-Each episode contains its own README explaining the mission, objectives, concepts practiced, and expected result.
+Repository-worthy artifacts contain their own README with the mission context, objectives, concepts practiced, implementation notes, and expected result.
 
 ---
 
