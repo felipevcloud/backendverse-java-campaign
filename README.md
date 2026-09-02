@@ -12,7 +12,7 @@ The campaign starts from **Head First Java / Use a Cabeça Java, 3rd edition** a
 
 | Item | Current state |
 | --- | --- |
-| Official methodology | Backendverse Playbook v1.3.1 |
+| Official methodology | Backendverse Playbook v1.3.2 |
 | Current Saga | Saga V — O Fluxo e o Caos Controlado |
 | Current mission | Boss Battle V — A Graduação do Core Java |
 | Mission status | In progress |
@@ -23,6 +23,8 @@ The campaign starts from **Head First Java / Use a Cabeça Java, 3rd edition** a
 Episode 13 was completed with all nine essential mastery items approved. Boss Battle V is now officially in progress, with seven convergence criteria awaiting integrated evidence.
 
 Episodes 12 and 13 were evidence-based learning missions and did not require standalone executable artifacts. Their progress, mastery evidence, and completion records live in [`CAMPAIGN.md`](CAMPAIGN.md), so no empty Episode directories are maintained for them. Starting Boss Battle V changed only the official campaign state; no new directory exists until the mission produces an executable artifact.
+
+Under Playbook v1.3.2, `MISSION START` and ordinary learning blocks do not trigger Library, GitHub, or README updates. Documentation is consolidated at `MISSION ACCOMPLISHED`; an intermediate continuity snapshot requires explicit approval.
 
 ---
 
@@ -83,7 +85,7 @@ The artifact tree currently ends with Episode 11 and Boss Battle IV. Saga V prog
 
 ### [`PLAYBOOK.md`](PLAYBOOK.md)
 
-The official living document for the campaign. Version 1.3.1 defines the methodology, rules, roadmap, learning philosophy, evidence model, review process, and documentation standards.
+The official living document for the campaign. Version 1.3.2 defines the methodology, rules, roadmap, learning philosophy, evidence model, review process, and documentation cadence.
 
 ### [`CAMPAIGN.md`](CAMPAIGN.md)
 
@@ -114,4 +116,3 @@ By the end of this campaign, I aim to be able to:
 This repository is part of a long-term learning journey.
 
 The focus is not only to finish exercises, but to build real understanding through practice, review, refactoring, and consistency.
-

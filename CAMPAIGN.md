@@ -2,7 +2,7 @@
 
 ## Playbook vigente
 
-Backendverse Playbook v1.3.1
+Backendverse Playbook v1.3.2
 
 Progresso anterior preservado.
 
@@ -24,7 +24,7 @@ Episode 13 — O Guardião das Exceções foi oficialmente concluído sob o Back
 
 ## Status Atual
 
-Boss Battle V — A Graduação do Core Java está oficialmente em andamento sob o Backendverse Playbook v1.3.1.
+Boss Battle V — A Graduação do Core Java está oficialmente em andamento sob o Backendverse Playbook v1.3.2.
 
 O Mapa de Maestria inicial possui sete itens em `○`, nenhum em `◐` e nenhum em `✓`. As evidências dos Episodes anteriores permanecem válidas, mas os itens desta Boss Battle exigem convergência em um problema integrado antes de receberem `✓`.
 
@@ -300,6 +300,14 @@ O aprendiz enviou `MISSION START` e abriu oficialmente a Boss Battle V — A Gra
 O Mapa de Maestria foi instanciado com sete critérios de convergência em `○`. O progresso anterior permanece preservado, sem presumir que evidências isoladas substituem a integração exigida pelo marco.
 
 Nenhuma pasta ou alteração de código foi criada pela abertura da missão. O primeiro bloco partirá da inspeção do projeto conhecido e de uma decisão de modelagem proporcional.
+
+### Correção operacional v1.3.2
+
+O Backendverse Playbook v1.3.2 foi adotado sem reiniciar a Boss Battle V nem alterar seu Mapa de Maestria.
+
+`MISSION START` e os blocos ordinários deixam de provocar atualizações na Library, no GitHub ou no `README.md`. A persistência documental passa a ser consolidada no `MISSION ACCOMPLISHED`.
+
+Qualquer snapshot intermediário de continuidade exigirá autorização explícita do aprendiz. Commits de código ou artefatos continuam sendo realizados quando a própria missão exigir trabalho versionado.
 
 ### Saga I — O Despertar do Código
 
