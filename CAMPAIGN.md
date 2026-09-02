@@ -10,6 +10,12 @@ Progresso anterior preservado.
 
 Saga V — O Fluxo e o Caos Controlado
 
+## Missão Atual
+
+Boss Battle V — A Graduação do Core Java
+
+A missão foi oficialmente iniciada depois que o aprendiz enviou `MISSION START`.
+
 ## Episódio Atual
 
 Nenhum Episode em andamento.
@@ -18,17 +24,25 @@ Episode 13 — O Guardião das Exceções foi oficialmente concluído sob o Back
 
 ## Status Atual
 
-O Episode 13 foi encerrado oficialmente depois que o aprendiz enviou `MISSION ACCOMPLISHED`.
+Boss Battle V — A Graduação do Core Java está oficialmente em andamento sob o Backendverse Playbook v1.3.1.
 
-O Mapa de Maestria final possui nove itens em `✓`, nenhum em `◐` e nenhum em `○`.
+O Mapa de Maestria inicial possui sete itens em `○`, nenhum em `◐` e nenhum em `✓`. As evidências dos Episodes anteriores permanecem válidas, mas os itens desta Boss Battle exigem convergência em um problema integrado antes de receberem `✓`.
 
-Antes do encerramento, o aprendiz solicitou uma revisão completa. A revisão retomou fluxo de `try`/`catch`, especificidade, `finally`, checked e unchecked, criação e lançamento de exceptions, propagação e decisões entre tratar e propagar. Lacunas de formulação e de responsabilidade entre métodos receberam Patches curtos e foram recuperadas em contextos diferentes.
-
-Não houve projeto independente nem artefato executável. As evidências aprovadas consistiram em previsões, rastreamentos, explicações, pequenos trechos Java e decisões técnicas. Nenhuma compilação ou execução era necessária para esta missão.
+A abertura da missão não produziu nem alterou artefato executável. O primeiro bloco definirá a evolução adequada de um projeto já conhecido a partir de sua estrutura real.
 
 Saga V — O Fluxo e o Caos Controlado permanece em andamento.
 
-Próximo grande marco disponível: Boss Battle V — A Graduação do Core Java. O marco ainda não foi iniciado.
+Próximo Episode após o marco: Episode 14 — O Ritual Maven.
+
+## Mapa de Maestria Atual — Boss Battle V
+
+- ○ modelar uma evolução coerente preservando responsabilidades e legibilidade
+- ○ escolher e utilizar Collections e generics de acordo com as regras do domínio
+- ○ aplicar pipelines com Streams sem esconder regras ou efeitos
+- ○ representar ausência com `Optional` quando apropriado
+- ○ tratar, propagar ou recuperar falhas conscientemente
+- ○ testar comportamentos principais, inválidos e adversariais compatíveis
+- ○ explicar e defender decisões técnicas da solução
 
 ## Mapa de Maestria Final — Episode 13
 
@@ -62,13 +76,9 @@ O Episode não exigiu projeto independente. A evidência aprovada consistiu em p
 
 ## Próxima Missão
 
-Boss Battle V — A Graduação do Core Java.
+Episode 14 — O Ritual Maven.
 
-O marco está disponível, mas ainda não foi iniciado.
-
-Para iniciá-lo, será necessário um novo:
-
-`MISSION START`
+A missão permanece bloqueada até a conclusão oficial da Boss Battle V.
 
 ## Habilidades Desbloqueadas
 
@@ -282,6 +292,14 @@ Um cenário de revisão utilizou prematuramente vocabulário de camadas ainda n�
 O Mapa de Maestria final foi consolidado com todos os nove itens essenciais em `✓`. Não houve projeto independente nem artefato executável, e nenhuma compilação ou execução foi necessária para as evidências aprovadas.
 
 `MISSION ACCOMPLISHED` foi enviado pelo aprendiz. O Episode 13 está oficialmente concluído e Boss Battle V — A Graduação do Core Java está disponível para um futuro `MISSION START`.
+
+### Início oficial da Boss Battle V
+
+O aprendiz enviou `MISSION START` e abriu oficialmente a Boss Battle V — A Graduação do Core Java.
+
+O Mapa de Maestria foi instanciado com sete critérios de convergência em `○`. O progresso anterior permanece preservado, sem presumir que evidências isoladas substituem a integração exigida pelo marco.
+
+Nenhuma pasta ou alteração de código foi criada pela abertura da missão. O primeiro bloco partirá da inspeção do projeto conhecido e de uma decisão de modelagem proporcional.
 
 ### Saga I — O Despertar do Código
 

@@ -14,14 +14,15 @@ The campaign starts from **Head First Java / Use a Cabeça Java, 3rd edition** a
 | --- | --- |
 | Official methodology | Backendverse Playbook v1.3.1 |
 | Current Saga | Saga V — O Fluxo e o Caos Controlado |
-| Episode in progress | None |
+| Current mission | Boss Battle V — A Graduação do Core Java |
+| Mission status | In progress |
 | Last completed mission | Episode 13 — O Guardião das Exceções |
-| Next mission | Boss Battle V — A Graduação do Core Java |
+| Next Episode | Episode 14 — O Ritual Maven |
 | Boss Battles completed | 4 |
 
-Episode 13 was completed with all nine essential mastery items approved. Boss Battle V is available, but has not yet been started.
+Episode 13 was completed with all nine essential mastery items approved. Boss Battle V is now officially in progress, with seven convergence criteria awaiting integrated evidence.
 
-Episodes 12 and 13 were evidence-based learning missions and did not require standalone executable artifacts. Their progress, mastery evidence, and completion records live in [`CAMPAIGN.md`](CAMPAIGN.md), so no empty Episode directories are maintained for them.
+Episodes 12 and 13 were evidence-based learning missions and did not require standalone executable artifacts. Their progress, mastery evidence, and completion records live in [`CAMPAIGN.md`](CAMPAIGN.md), so no empty Episode directories are maintained for them. Starting Boss Battle V changed only the official campaign state; no new directory exists until the mission produces an executable artifact.
 
 ---
 
@@ -113,3 +114,4 @@ By the end of this campaign, I aim to be able to:
 This repository is part of a long-term learning journey.
 
 The focus is not only to finish exercises, but to build real understanding through practice, review, refactoring, and consistency.
+
