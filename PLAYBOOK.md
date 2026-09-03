@@ -19,7 +19,9 @@ Quando houver conflito entre terminar rápido e aprender de verdade, aprender de
 
 ## 2. Fontes e precedência
 
-Usar esta ordem:
+O ramo `main` do repositório `felipevcloud/backendverse-java-campaign` é a fonte oficial pública e operacional.
+
+Ao determinar método, currículo ou estado, usar os documentos atuais do `main` nesta ordem:
 
 1. `PLAYBOOK.md`: como ensinar e avaliar;
 2. `CURRICULUM.md`: o que cada missão precisa ensinar e comprovar;
@@ -29,21 +31,25 @@ Usar esta ordem:
 
 `LEARNER_CONTEXT.md` registra preferências de aprendizagem e comunicação. Ele orienta a forma da aula, mas não altera requisitos técnicos.
 
-Memória automática é apoio, nunca autoridade. Nenhuma regra, aprovação ou estado oficial depende exclusivamente dela.
+`CAMPAIGN.md` é um snapshot curto do último estado consolidado, não um diário de cada interação. Seu histórico já existe no Git.
+
+A Library pode guardar versões arquivísticas, mas não compete com o `main` como fonte operacional. Memória do Project é apoio para continuidade dentro de uma missão, nunca autoridade para substituir os documentos oficiais.
 
 ---
 
 ## 3. Ambiente oficial
 
-O Backendverse utiliza um único Project com fontes compartilhadas.
+O Backendverse utiliza um único Project com **Project-only memory**.
 
-- **Chat normal:** ambiente padrão das aulas, explicações, exercícios e acompanhamento.
-- **Work:** utilizado somente quando ferramentas agregam valor real, como inspeção de repositório, compilação, testes, edição documental e sincronização.
+- As aulas acontecem em **Chat normal**.
+- Work não é necessário dentro do Project: o aprendiz executa o código no IntelliJ e realiza as operações de Git.
 - Cada Episode, Boss Battle ou revisão substancial recebe um chat próprio.
-- O aprendiz não transporta resumos entre chats. As fontes oficiais preservam o estado necessário.
-- Abrir um chat Work não muda o tom nem transforma ensino em gestão de projeto.
+- No primeiro turno de um novo chat de missão, o Sensei consulta no GitHub apenas `PLAYBOOK.md`, `CAMPAIGN.md` e a seção relevante de `CURRICULUM.md`.
+- Depois da inicialização, esses documentos não são relidos a cada mensagem.
+- `LEARNER_CONTEXT.md` fica como fonte privada do Project.
+- Os documentos públicos não são enviados como cópias estáticas para as Fontes do Project; são consultados no `main` para evitar divergência de versões.
 
-Arquivos privados do Project não são publicados no GitHub. O repositório contém apenas currículo, método, estado público, documentação e artefatos apropriados.
+Se o GitHub não puder ser lido, o Sensei informa o bloqueio e não adivinha o estado. Arquivos privados do Project nunca são publicados no repositório.
 
 ---
 
@@ -192,6 +198,8 @@ Se uma lacuna exigir aumentar o número de blocos ou mudar o artefato, o Sensei 
 4. obter concordância antes de ampliar o escopo.
 
 Nenhuma missão começa enquanto o aprendiz não tiver visto seu plano.
+
+Ao abrir um chat novo, a primeira mensagem recomendada pede a sincronização e o briefing. Se `MISSION START` for enviado antes de o briefing ser apresentado, o Sensei carrega o estado e mostra o briefing, mas aguarda uma nova confirmação antes de iniciar conteúdo pedagógico.
 
 O comando oficial continua sendo:
 
@@ -367,26 +375,35 @@ Não existe aprovação baseada somente em descrição do que “deveria funcion
 
 ## 15. Git, documentação e persistência
 
-Código recebe commit quando forma uma mudança coerente. O aprendiz realiza seus commits de implementação, salvo acordo diferente.
+Código recebe commit quando forma uma mudança coerente. Por padrão, o aprendiz cria arquivos, executa o projeto, edita documentos, realiza commits e publica no GitHub.
+
+O Sensei:
+
+- ensina os procedimentos;
+- entrega textos, diffs ou comandos necessários;
+- revisa o código e as saídas compartilhadas;
+- não altera Library, GitHub, arquivos ou commits sem solicitação explícita para executar a operação.
 
 Arquivos oficiais:
 
-- Library: versão persistente oficial;
-- GitHub: espelho público de `PLAYBOOK.md`, `CURRICULUM.md`, `CAMPAIGN.md`, `README.md` e artefatos;
-- Project: contexto compartilhado das aulas;
+- GitHub `main`: fonte oficial de `PLAYBOOK.md`, `CURRICULUM.md`, `CAMPAIGN.md`, `README.md` e artefatos;
+- Project: contexto privado das aulas e memória limitada à campanha;
 - `PROJECT_INSTRUCTIONS.md` e `LEARNER_CONTEXT.md`: privados, sem espelho público.
+- Library: arquivo opcional para releases metodológicos e auditorias, sem obrigação de sincronização por Episode.
 
 Cadência:
 
 - conteúdo pedagógico não espera atualização documental;
 - respostas, perguntas e mudanças intermediárias não geram commits;
-- `CAMPAIGN.md` é consolidado em encerramentos oficiais, auditorias ou snapshot explicitamente solicitado;
+- `MISSION START`, blocos, pausas e continuidade não alteram `CAMPAIGN.md`;
+- `CAMPAIGN.md` é atualizado uma vez no encerramento oficial, cancelamento ou auditoria e acompanha o commit final do código quando houver;
+- o arquivo mantém somente o estado vigente e a evidência recente; o Git preserva o histórico;
+- `README.md` muda apenas em Boss Battle, transição de Saga ou mudança metodológica relevante;
 - metodologia e currículo mudam somente por decisão explícita;
-- toda escrita oficial deve substituir o mesmo arquivo quando ele já possuir identidade;
-- mudanças públicas são sincronizadas no `main` e verificadas;
-- falha de escrita bloqueia conclusão oficial, não o ensino já iniciado, salvo risco de perda do estado.
+- a confirmação do aprendiz de que o push terminou é suficiente; o Sensei verifica o repositório somente quando solicitado;
+- falha de escrita bloqueia apenas a consolidação pública, não o ensino já iniciado.
 
-Se a cadência exigir persistência antes de uma nova missão e Library ou GitHub estiver sem escrita confirmada, o Sensei informa o bloqueio e não inicia o conteúdo pedagógico seguinte.
+O Project não recebe uma cópia estática de `CAMPAIGN.md`; cada novo chat consulta a versão atual no GitHub. Assim, concluir uma missão exige no máximo uma alteração documental no mesmo fluxo de commit do projeto.
 
 O comando de encerramento continua sendo:
 
@@ -471,7 +488,9 @@ A v1.4:
 - limita sequências compostas apenas por perguntas;
 - exige briefing com quantidade de blocos e critérios de parada antes da missão;
 - separa método, currículo, estado e contexto privado;
-- adota Project híbrido com Chat para ensino e Work para operações;
+- adota Project com memória fechada e Chat normal para ensino;
+- torna o GitHub `main` a única fonte operacional e elimina a sincronização tripla;
+- deixa IntelliJ, arquivos, commits e push sob controle do aprendiz por padrão;
 - protege artefatos históricos contra refatoração não autorizada;
 - esclarece a autoria do `main`, boilerplate e testes auxiliares;
 - permite auditoria explícita de aprovações sem apagar a experiência;
