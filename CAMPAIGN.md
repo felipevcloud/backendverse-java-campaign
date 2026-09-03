@@ -2,7 +2,8 @@
 
 **Atualizado em:** 03/09/2026  
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`  
-**Playbook vigente:** Backendverse Playbook v1.4
+**Playbook vigente:** Backendverse Playbook v1.4.1
+**Curriculum vigente:** Backendverse Curriculum v1.4.1
 
 ## Estado atual
 
@@ -11,7 +12,7 @@
 - **Próxima missão:** Episode 12 — A Respiração dos Fluxos
 - **Última missão executável aprovada:** Boss Battle IV — O Arquivo do Mundo Digital
 
-O Episode 12 receberá um novo briefing sob a v1.4 antes de `MISSION START`.
+O Episode 12 seguirá o plano-base de três blocos definido no Curriculum v1.4.1 e receberá seu briefing antes de `MISSION START`.
 
 ## Progresso preservado
 
