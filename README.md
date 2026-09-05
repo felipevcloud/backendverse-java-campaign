@@ -1,8 +1,8 @@
 # Backendverse Java Campaign
 
-A structured path from Java fundamentals to backend development, built around executable practice, technical review and progressively independent projects.
+A practical path from Java fundamentals to junior backend development, built around explicit teaching, executable code, technical review and progressively independent projects.
 
-The campaign begins with **Head First Java / Use a Cabeça Java, 3rd edition** and continues through Maven, automated testing, Git, JSON, SQL, JDBC, HTTP, REST, Spring Boot, persistence and professional API design.
+The campaign starts with **Head First Java / Use a Cabeça Java, 3rd edition**, completes the modern Java foundations needed by backend work and continues through Maven, testing, Git, JSON, SQL, JDBC, HTTP, REST, Spring Boot, persistence, security and delivery.
 
 ---
 
@@ -10,62 +10,51 @@ The campaign begins with **Head First Java / Use a Cabeça Java, 3rd edition** a
 
 | Item | Current state |
 |---|---|
-| Official methodology | Backendverse Playbook v1.4.1 |
-| Official curriculum | Backendverse Curriculum v1.4.1 |
+| Official methodology | Backendverse Playbook v1.5 — final |
+| Official curriculum | Backendverse Curriculum v1.5 |
 | Current arc | Saga V — O Fluxo e o Caos Controlado |
-| Last major verified milestone | Boss Battle IV — O Arquivo do Mundo Digital |
-| Current restart point | Episode 12 — A Respiração dos Fluxos |
+| Last approved mission | Episode 12 — A Respiração dos Fluxos |
+| Next mission | Revisit 12 — O Arsenal Funcional |
 | Boss Battles completed | 4 |
 
-An audit requested by the learner found that the previous completions of Episodes 12 and 13 relied too heavily on verbal reasoning and small snippets without sufficient independent executable evidence. Those approvals were withdrawn, and the Boss Battle V attempt was cancelled before producing an artifact.
+Episodes 01–12 and Boss Battles I–IV remain approved. A previous Episode 13 approval was withdrawn after an audit found insufficient independent executable evidence, and the earlier Boss Battle V attempt ended without an artifact.
 
-Episodes 01–11 and Boss Battles I–IV remain fully preserved. Progress under Playbook v1.4.1 resumes from Episode 12.
+The Revisit 12 is a one-time transition for this campaign: it preserves the completed Episode 12 while closing functional-interface, collector, reduction and `Optional` coverage added by v1.5.
 
 ---
 
-## Current Methodology — v1.4.1
+## Final Methodology — v1.5
 
-The campaign now follows a simpler learning sequence:
+The learning loop is:
 
 ```text
-Teach
-→ Demonstrate
-→ Build together
-→ Build independently
-→ Execute
-→ Review
-→ Revisit later
+teach → demonstrate → build together → build independently → execute → review → revisit
 ```
 
-For operational programming skills, discussion or code recognition alone is not mastery. Approval requires independent code, compilation, execution and inspection.
+Important rules:
 
-Every mission receives a visible plan before it begins, normally containing two to four substantial blocks with explicit deliverables and stopping points. Boss Battles only integrate content that has already been implemented during previous Episodes.
+- every mission is fully planned in the Curriculum before it begins;
+- new syntax and APIs are taught before they are required;
+- short content/action microcycles replace interrogations;
+- the complete Mastery Map appears at mission start and block boundaries;
+- every operational Episode ends with a planned, independent mini-boss;
+- the final harness reproduces essential evidence in one clear run;
+- discussion and code recognition do not replace implementation;
+- documentation and Git administration wait until mission closure.
 
-Those block plans and their Mastery Map targets are predefined in the Curriculum for every mission from Episode 12 onward. The Sensei adapts depth and recovery to the learner, but does not redesign the mission in each new chat.
+The Sensei provides infrastructure that is not being assessed—such as a `main`, fixtures or boilerplate—while the learner writes, runs and explains the pedagogical core.
 
-Each block now runs through short cycles of explanation and learner action instead of front-loading every planned concept. The complete Mastery Map appears when a mission starts and whenever a block closes, using explicit `○`, `◐` and `✓` states.
-
-A block boundary is a hard stopping point. The Sensei reviews the evidence, shows the current map, names the next block and waits for the learner before teaching anything new.
-
-Lessons run in a normal Chat inside a Project with project-only memory. The learner writes and runs code in IntelliJ and controls commits and pushes. The Sensei teaches, reviews shared evidence and provides precise patches or commands; external operations happen only when explicitly requested.
-
-The repository's `main` branch is the single operational source of truth. New mission chats read the current Playbook, Curriculum section and Campaign state from GitHub instead of relying on static copies uploaded to the Project.
+Lessons run in normal Chat inside a Project. The repository `main` branch is the only operational public source. Project Instructions only bootstrap the Sensei; private learner context stores stable preferences, never campaign state.
 
 ---
 
 ## Main Files
 
-### [`PLAYBOOK.md`](PLAYBOOK.md)
+- [`PLAYBOOK.md`](PLAYBOOK.md): teaching, evidence, interaction and persistence rules.
+- [`CURRICULUM.md`](CURRICULUM.md): complete roadmap, mandatory coverage, block plans and mastery requirements.
+- [`CAMPAIGN.md`](CAMPAIGN.md): short rolling snapshot of the current official state.
 
-The operational teaching and assessment rules.
-
-### [`CURRICULUM.md`](CURRICULUM.md)
-
-The complete roadmap, predefined block plans, mission content and mastery requirements.
-
-### [`CAMPAIGN.md`](CAMPAIGN.md)
-
-A short rolling snapshot of the current official state and latest verified evidence. Git history preserves previous snapshots.
+Git history preserves earlier states; `CAMPAIGN.md` is not used as a conversation diary.
 
 ---
 
@@ -80,23 +69,30 @@ backendverse-java-campaign/
 ├── Saga01_O_Despertar_Do_Codigo/
 ├── Saga02_O_Caminho_Das_Tecnicas/
 ├── Saga03_O_Legado_Dos_Objetos/
-└── Saga04_O_Arsenal_Do_Desenvolvedor/
+├── Saga04_O_Arsenal_Do_Desenvolvedor/
+└── Saga05_O_Fluxo_E_O_Caos_controlado/
+    └── Episode12_A_Respiração_Dos_Fluxos/
 ```
 
-A mission receives a directory only when it produces an executable or otherwise repository-worthy artifact. The validated artifact tree currently ends with Boss Battle IV.
+A mission receives a directory only after it produces an executable or otherwise repository-worthy artifact. Empty Episode folders are not created in advance.
 
 ---
 
-## Final Goal
+## Junior Backend Exit Profile
 
-By the end of the campaign, I aim to be able to:
+The completed campaign requires evidence of:
 
-- understand and model software problems;
-- write clean, tested Java code independently;
-- work with relational databases;
-- build REST APIs with Spring Boot;
-- use Git and professional build tools;
-- explain and defend technical decisions;
-- maintain a coherent backend development portfolio.
+- independent Java and object-oriented modeling;
+- Collections, generics, exceptions, functional Java and modern value types;
+- Maven, Git, JSON and automated testing;
+- SQL, PostgreSQL, JDBC, transactions, indexes and migrations;
+- HTTP, REST and API contract design;
+- Spring Boot, layered architecture and JPA;
+- DTOs, validation, global errors, pagination and OpenAPI;
+- authentication and authorization;
+- Mockito, Testcontainers and integration testing;
+- external configuration, logs and health checks;
+- Docker, CI and a reproducible deployment;
+- explanation and defense of technical decisions.
 
-The goal is not to look like I understand code. The goal is to build it, run it, debug it and know why it works.
+Advanced concurrency, messaging, distributed cache, microservices, Kubernetes and cloud-specific architecture remain explicit post-graduation arcs. The goal here is not to collect buzzwords—it is to build, run, debug, ship and understand a solid junior backend system.

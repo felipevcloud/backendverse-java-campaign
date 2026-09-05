@@ -1,40 +1,92 @@
 # Backendverse Curriculum
 
-**Versão:** 1.4.1  
-**Função:** definir a ordem das missões, seus conteúdos obrigatórios, Mapas de Maestria, planos-base de blocos e a capacidade que cada marco precisa comprovar.  
+**Versão:** 1.5
+**Status:** currículo final da campanha
+**Função:** garantir a formação de Java Backend Junior por uma sequência explícita de ensino, prática, mini-bosses e projetos executáveis.
 **Método de ensino e avaliação:** `PLAYBOOK.md`.
 
 ---
 
 ## 1. Contrato curricular
 
-O currículo define o que não pode ser omitido e fornece o plano-base que o Sensei deve usar. O briefing apresenta esse plano em linguagem adequada ao momento; não reinventa a missão a partir de uma lista solta de assuntos.
+Este documento define o que não pode ser omitido e fornece o plano-base que o Sensei deve executar. O briefing traduz esse plano para a conversa; não redesenha a missão a partir de uma lista solta de substantivos.
 
-Cada missão ainda não concluída possui:
+Cada Episode obrigatório possui:
 
-- capacidade final;
+- capacidade final e pré-requisitos;
 - Mapa de Maestria;
+- escopo explícito de conceitos, APIs e decisões;
 - plano-base de dois a quatro blocos substanciais;
-- entrega e ponto de parada de cada bloco;
-- evidência mínima de conclusão.
+- produto e ponto de parada de cada bloco;
+- evidência independente mínima;
+- mini-boss integrado como ação final do último bloco.
 
-Os itens do mapa podem aparecer em mais de um bloco. Contato guiado pode produzir `◐`; `✓` operacional continua dependendo da evidência independente exigida pelo Playbook.
+Contato guiado pode produzir `◐`. `✓` operacional depende da evidência real definida no Playbook. O mini-boss não ensina: comprova transferência usando apenas o arsenal já apresentado.
 
 ### 1.1 Adaptação sem improvisação
 
-O plano-base é obrigatório, mas a profundidade é adaptativa.
+- A profundidade e o número de microciclos são adaptativos; mapa, ordem, produtos e fronteiras são estáveis.
+- O Sensei ensina toda construção nova antes de cobrá-la e oferece uso guiado antes da prova independente.
+- Exposição já comprovada pode ser abreviada, mas a evidência independente e o mini-boss permanecem.
+- Repetição usa contexto novo e proporcional; não troca nomes numa solução copiável.
+- Lacuna descoberta recebe Patch dentro do bloco. Mudar blocos ou artefato exige evidência, corte natural e concordância.
+- Conteúdo relacionado fora do escopo precisa ter destino explícito; não entra disfarçado como “dica”.
 
-- O Sensei pode acrescentar microciclos de explicação e recuperação **dentro do bloco atual** quando o aprendiz ainda não compreendeu ou não conseguiu executar.
-- O Sensei pode reduzir exposição já comprovada, mas não eliminar a prática independente nem a evidência mínima.
-- Repetição usa exemplos novos e proporcionais; não copia a solução que depois será avaliada.
-- Alterar a ordem, fundir blocos, criar bloco adicional ou mudar o artefato exige uma lacuna observável, explicação no corte natural e concordância do aprendiz.
-- Extensão pedagógica corrige uma lacuna do conteúdo vigente; não autoriza antecipar assunto de Episode futuro.
+Salvo indicação contrária, cada missão obrigatória depende da missão obrigatória anterior. Em todo Episode ainda não concluído, a última entrega do plano culmina no mini-boss obrigatório do Playbook, mesmo quando a linha da tabela possui outro nome. O desafio integra o mapa daquele Episode, usa contexto novo e não apresenta API inédita.
 
-Os planos-base detalhados passam a ser obrigatórios a partir do Episode 12. Episodes 01–11 e Boss Battles I–IV permanecem como histórico aprovado; se forem reabertos por auditoria, recebem um plano de recuperação específico baseado em seus mapas, sem reescrever a conquista original.
+Os planos detalhados são obrigatórios a partir do Episode 12. Episodes 01–11 e Boss Battles I–IV permanecem como histórico aprovado. Se reabertos por auditoria, recebem Revisit específico sem reescrever a conquista original.
 
-Para tópicos operacionais, os itens abaixo somente recebem `✓` depois de implementação independente, compilação, execução e revisão, conforme o Playbook.
+O **Head First Java / Use a Cabeça Java — 3ª edição** orienta o Core Java até Exceptions. O Episode 14 completa tipos modernos essenciais ao backend. A partir daí, a trilha profissional é ensinada desde os fundamentos.
 
-O **Head First Java / Use a Cabeça Java — 3ª edição** orienta a trilha de Core Java até o Capítulo 13. A trilha profissional posterior é ensinada pelo Sensei desde os fundamentos.
+### 1.2 Perfil de saída: Java Backend Junior
+
+O currículo só termina quando houver evidência integrada destas capacidades:
+
+| Eixo | Cobertura obrigatória |
+|---|---|
+| Java e modelagem | objetos, OOP, Collections, generics, exceptions, lambdas/Streams, `Optional`, `enum`, `record`, imutabilidade, `BigDecimal` e `java.time` |
+| Ferramentas | Maven, dependências, Git, JSON, diagnóstico de build e JUnit |
+| Dados | SQL, modelagem relacional, índices e planos básicos, PostgreSQL, JDBC e transações |
+| Web | HTTP, REST, JSON, contratos, statuses e cliente HTTP |
+| Spring | Boot, configuração externa, injeção, controllers, services, repositories e profiles |
+| Persistência | JPA/Hibernate, relações, migrations e fronteiras transacionais |
+| API profissional | DTOs, validação, erros globais, paginação, segurança e OpenAPI |
+| Qualidade e entrega | unitários, mocks, integração, Testcontainers, logs, health/Actuator, Docker, CI e deploy reproduzível |
+
+O perfil é de entrada profissional sólida, não de senioridade. Concorrência avançada, mensageria, cache distribuído, microserviços, Kubernetes e cloud específica ficam nos arcos avançados após o exame final.
+
+### 1.3 Destinos que não podem ser esquecidos
+
+| Conteúdo | Missão de domínio |
+|---|---|
+| interfaces funcionais padrão, method references, collectors e `Optional` seguro | Episode 12 / Revisit 12 de transição |
+| exceptions, recursos e integridade diante de falha | Episode 13 |
+| `enum`, `record`, imutabilidade, `BigDecimal` e `java.time` | Episode 14 |
+| testes parametrizados | Episode 17 |
+| branches e integração Git | Episode 18 |
+| índices e `EXPLAIN` | Episode 20 |
+| configuração externa, profiles, secrets, logs e Actuator | Episode 32 |
+| migrations | Episode 38 |
+| `@Transactional` e rollback de serviço | Episode 40 |
+| Mockito e Testcontainers | Episode 45 |
+| autenticação, autorização e JWT | Episode 46 |
+| Docker, CI e deploy/health | Episode 47 |
+
+Nenhum desses itens pode ser presumido antes do destino. Se uma missão anterior precisar dele apenas como infraestrutura, o Sensei fornece o trecho sem tratá-lo como habilidade aprendida.
+
+### 1.4 Eixos transversais
+
+Do começo ao fim, toda aplicação proporcional também exercita:
+
+- leitura de erros, stack traces, logs e documentação oficial;
+- depuração por hipótese e observação, não por edição aleatória;
+- nomes claros, métodos pequenos, coesão e refatoração preservando comportamento;
+- casos normal, inválido, vazio e de limite quando fizerem sentido;
+- segredos e artefatos gerados fora do Git;
+- commits coerentes e instruções mínimas de reprodução;
+- explicação de decisões e limites sem fingir certeza.
+
+Esses eixos não criam cerimônia em cada bloco. Eles reaparecem nos mini-bosses, checkpoints e Boss Battles. A trilha usa um JDK LTS suportado, no mínimo Java 17; a versão exata é fixada quando a campanha entra no Maven.
 
 ---
 
@@ -42,7 +94,7 @@ O **Head First Java / Use a Cabeça Java — 3ª edição** orienta a trilha de 
 
 ### Episode 01 — O Primeiro Pulso
 
-**Base:** Chapter 1 — *Breaking the Surface*  
+**Base:** Chapter 1 — *Breaking the Surface*
 **Capacidade final:** criar, compilar e executar um programa Java simples.
 
 **Mapa base**
@@ -55,7 +107,7 @@ O **Head First Java / Use a Cabeça Java — 3ª edição** orienta a trilha de 
 
 ### Episode 02 — A Vila dos Moldes
 
-**Base:** Chapter 2 — *A Trip to Objectville*  
+**Base:** Chapter 2 — *A Trip to Objectville*
 **Capacidade final:** modelar e utilizar classes e objetos simples.
 
 **Mapa base**
@@ -67,7 +119,7 @@ O **Head First Java / Use a Cabeça Java — 3ª edição** orienta a trilha de 
 
 ### Episode 03 — O Chakra das Referências
 
-**Base:** Chapter 3 — *Know Your Variables*  
+**Base:** Chapter 3 — *Know Your Variables*
 **Capacidade final:** prever e manipular valores, referências, arrays e `null`.
 
 **Mapa base**
@@ -89,7 +141,7 @@ Integra Episodes 01–03 em um programa executável.
 
 ### Episode 04 — O Despertar dos Métodos
 
-**Base:** Chapter 4 — *How Objects Behave*  
+**Base:** Chapter 4 — *How Objects Behave*
 **Capacidade final:** criar objetos com estado encapsulado e comportamento coerente.
 
 **Mapa base**
@@ -103,7 +155,7 @@ Integra Episodes 01–03 em um programa executável.
 
 ### Episode 05 — A Provação dos Cem Alvos
 
-**Base:** Chapter 5 — *Extra-Strength Methods*  
+**Base:** Chapter 5 — *Extra-Strength Methods*
 **Capacidade final:** planejar, implementar e testar manualmente um programa completo proporcional.
 
 **Mapa base**
@@ -117,7 +169,7 @@ Integra Episodes 01–03 em um programa executável.
 
 ### Episode 06 — A Biblioteca dos Sábios
 
-**Base:** Chapter 6 — *Using the Java Library*  
+**Base:** Chapter 6 — *Using the Java Library*
 **Capacidade final:** consultar a API Java e usar `ArrayList` tipado em um sistema pequeno.
 
 **Mapa base**
@@ -139,7 +191,7 @@ Integra Episodes 04–06 em um sistema executável com comportamento, validaçõ
 
 ### Episode 07 — A Herança dos Clãs
 
-**Base:** Chapter 7 — *Inheritance and Polymorphism*  
+**Base:** Chapter 7 — *Inheritance and Polymorphism*
 **Capacidade final:** escolher e implementar herança ou composição com justificativa.
 
 **Mapa base**
@@ -153,7 +205,7 @@ Integra Episodes 04–06 em um sistema executável com comportamento, validaçõ
 
 ### Episode 08 — O Torneio das Mil Formas
 
-**Base:** Chapter 8 — *Interfaces and Abstract Classes*  
+**Base:** Chapter 8 — *Interfaces and Abstract Classes*
 **Capacidade final:** criar e utilizar abstrações com propósito.
 
 **Mapa base**
@@ -167,7 +219,7 @@ Integra Episodes 04–06 em um sistema executável com comportamento, validaçõ
 
 ### Episode 09 — O Ciclo das Almas no Heap
 
-**Base:** Chapter 9 — *Constructors and Garbage Collection*  
+**Base:** Chapter 9 — *Constructors and Garbage Collection*
 **Capacidade final:** garantir nascimento válido e explicar o ciclo básico dos objetos.
 
 **Mapa base**
@@ -189,7 +241,7 @@ Integra Episodes 07–09 em um projeto executável com hierarquia, composição,
 
 ### Episode 10 — As Leis do Mundo Estático
 
-**Base:** Chapter 10 — *Numbers and Statics*  
+**Base:** Chapter 10 — *Numbers and Statics*
 **Capacidade final:** usar estado compartilhado e ferramentas numéricas conscientemente.
 
 **Mapa base**
@@ -205,7 +257,7 @@ Integra Episodes 07–09 em um projeto executável com hierarquia, composição,
 
 ### Episode 11 — O Inventário dos Caçadores
 
-**Base:** Chapter 11 — *Collections and Generics*  
+**Base:** Chapter 11 — *Collections and Generics*
 **Capacidade final:** modelar, implementar e testar armazenamento, identidade, busca e ordenação.
 
 **Mapa base**
@@ -230,69 +282,106 @@ Integra Episodes 10–11. Exige projeto executável e revisão adversarial real.
 
 ### Episode 12 — A Respiração dos Fluxos
 
-**Base:** Chapter 12 — *Lambdas and Streams*  
-**Capacidade final:** escrever pipelines novos, executá-los e explicar o fluxo dos dados sem depender de um molde copiado.
+**Base:** Chapter 12 — *Lambdas and Streams*
+**Pré-requisitos:** Collections, generics, `equals`/`hashCode` e `Comparator` do Episode 11.
+**Capacidade final:** escolher contratos funcionais e construir pipelines legíveis, seguros e autorais sem depender de um molde copiado.
 
 **Mapa base**
 
-- expressão lambda;
-- interface funcional;
-- criação e consumo de Stream;
-- operações intermediárias e lazy evaluation;
-- `filter`;
-- `map`;
-- operações terminais;
-- `toList()` e `collect()`;
-- `reduce()`;
-- `Optional`;
+- lambda, tipo-alvo e interface funcional;
+- `Predicate`, `Function`, `Consumer` e `Supplier`;
+- reconhecimento de `UnaryOperator` e `BinaryOperator`;
+- method references;
+- criação, consumo único e lazy evaluation de `Stream`;
+- `filter`, `map`, `flatMap`, `distinct` e `sorted`;
+- operações terminais, curto-circuito e efeitos colaterais;
+- `toList()`, `collect()` e collectors essenciais;
+- `reduce()` com e sem identidade;
+- `Optional` para ausência, transformação segura e limites de uso;
 - composição legível;
 - escolha entre Stream e abordagem imperativa.
+
+**Escopo ensinado:** `Predicate.test`, `Function.apply`, `Consumer.accept`, `Supplier.get`, referências de método equivalentes a lambdas já entendidas, `stream`, `filter`, `map`, `flatMap`, `distinct`, `sorted`, `forEach`, `count`, `anyMatch`, `findFirst`, `min`, `max`, `toList`, `collect`, `Collectors.toList`, `joining`, `groupingBy` e `counting`, as duas formas pedagógicas de `reduce`, `Optional.empty/of/ofNullable`, `map`, `filter`, `orElse`, `orElseGet` e `orElseThrow`. O Episode explicita que `Stream.toList()` devolve lista não modificável e que a mutabilidade de um resultado depende do collector contratado; também ensina por que evitar `Optional.get`, `null` dentro de `Optional` e `Optional` como campo ou parâmetro sem necessidade. Paralelismo, o `reduce` de três argumentos e collectors avançados ficam fora do Episode.
+
+**Plano-base — 4 blocos**
+
+| Bloco | Mapa principal | Entrega e ponto de parada |
+|---|---|---|
+| 1. O arsenal funcional | lambda, tipo-alvo, quatro interfaces padrão, operators e method references | Laboratório guiado compara contratos e depois o aprendiz cria comportamentos novos para cada papel. Termina quando ele escolher a interface pela assinatura e executar as quatro formas sem adivinhação. |
+| 2. Domar o fluxo | ciclo do Stream, lazy evaluation, `filter`, `map`, `flatMap`, `distinct`, `sorted`, consumo único e legibilidade | Pipelines guiados tornam a avaliação visível; dois pipelines curtos são modificados pelo aprendiz. Termina quando um elemento puder ser rastreado e uma coleção aninhada achatada conscientemente. |
+| 3. Terminar, reduzir e representar o vazio | terminais, curto-circuito, collectors, `reduce` e `Optional` seguro | Exemplos cobrem famílias de operações antes de dois métodos independentes: uma agregação e uma busca ausente. Termina após normal, vazio, borda e explicação da identidade correta. |
+| 4. Mini-boss — O Santuário dos Fluxos | composição, escolha Stream × imperativo e mapa completo | Em domínio novo, o aprendiz implementa seleção/transformação, agrupamento ou agregação e busca opcional; o harness fornecido executa tudo. Termina com revisão, comparação justificada com laço e zero API surpresa. |
+
+**Evidência mínima obrigatória**
+
+- aplicação Java executável criada para o Episode;
+- uso executável das quatro interfaces funcionais padrão e reconhecimento dos operators;
+- ao menos um method reference equivalente a lambda compreendida;
+- pipeline guiado com avaliação visível;
+- pelo menos três operações independentes de formas diferentes, incluindo `flatMap`, collector ou agrupamento e `reduce`;
+- `Optional` real com fallback lazy ou `orElseThrow` conscientemente escolhido;
+- mini-boss autoral executado em cenários normal, vazio e de borda;
+- explicação do caminho de um elemento, da identidade de um `reduce` e da escolha Stream versus laço.
+
+Previsões e leitura de pipelines servem para diagnóstico, mas não concluem o Episode.
+
+### Revisit 12 — O Arsenal Funcional
+
+**Natureza:** transição obrigatória exclusiva da campanha que concluiu o Episode 12 sob o Curriculum v1.4.1. A aprovação histórica e o artefato permanecem válidos; o Revisit fecha a diferença de cobertura antes do Episode 13.
+**Pré-requisitos:** Episode 12 aprovado e código real disponível.
+**Capacidade final:** completar e reter o arsenal funcional acrescentado pela v1.5 sem refazer o Episode inteiro.
+
+**Mapa de recuperação**
+
+- `Predicate`, `Function`, `Consumer` e `Supplier` por assinatura e uso;
+- `UnaryOperator`, `BinaryOperator` e method references;
+- `flatMap`;
+- `distinct`, `sorted`, `collect`, `joining`, `groupingBy` e `counting`;
+- `reduce` com identidade segura e sem identidade;
+- `Optional.map`, `filter`, `orElseGet` e `orElseThrow`;
+- transferência integrada.
 
 **Plano-base — 3 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Domar o fluxo | lambda, interface funcional, criação e consumo, `filter`, `map`, operações intermediárias e terminais, lazy evaluation, `toList()` e `collect()` | Pipeline guiado digitado e executado pelo aprendiz em `main` fornecido pelo Sensei. Termina quando o resultado estiver correto e um elemento puder ser rastreado pela pipeline. |
-| 2. Sem rodinhas | `reduce()`, composição legível e seleção consciente de operações | Dois métodos com pipelines independentes e de formas diferentes; um deles usa `reduce()`. Termina depois de compilação, execução e revisão sem algoritmo central fornecido. |
-| 3. O vazio também é dado | `Optional` e escolha entre Stream e abordagem imperativa | Operação independente com ausência legítima, cenários normal, vazio e de borda, seguida de justificativa Stream versus laço. Termina com revisão da aplicação completa. |
+| 1. Dar nome aos contratos | interfaces padrão, operators e method references | Conteúdo curto e exemplos são seguidos por um laboratório autoral de transformação, teste, consumo e fornecimento. Termina quando assinatura e comportamento estiverem ligados em código executado. |
+| 2. Abrir as rotas perdidas | `flatMap`, collectors, formas de `reduce` e `Optional` seguro | Cada API recebe modelo genérico antes de uma operação nova do aprendiz. Termina após vazio, borda e uma identidade adversarial que não presuma números positivos. |
+| 3. Mini-boss — A Arena das Funções | mapa de recuperação completo | Em domínio diferente do Episode 12, o aprendiz implementa três operações integradas e executa um harness final fornecido. Termina com revisão real e todos os itens comprovados, sem alterar o artefato histórico. |
 
-**Evidência mínima obrigatória**
-
-- aplicação Java executável criada para o Episode;
-- pelo menos um pipeline construído de forma guiada;
-- pelo menos dois pipelines independentes com formas diferentes;
-- uso real de ausência com `Optional`;
-- execução manual com entradas normais, vazias e de borda, usando ponto de entrada fornecido pelo Sensei quando apropriado;
-- explicação do caminho percorrido por um elemento.
-
-Previsões e leitura de pipelines servem para diagnóstico, mas não concluem o Episode.
+**Evidência mínima:** arquivo executável novo para o Revisit, pelo menos uma criação autoral por papel funcional, `flatMap`, collector, `reduce` seguro, `Optional` com caminho vazio, mini-boss e harness final. A pasta só é criada quando o arquivo existir.
 
 ### Episode 13 — O Guardião das Exceções
 
-**Base:** Chapter 13 — *Exception Handling*  
+**Base:** Chapter 13 — *Exception Handling*
+**Pré-requisitos:** Revisit 12 concluído nesta campanha; classes, métodos, estado e `Optional`.
 **Capacidade final:** implementar, lançar, propagar, capturar e recuperar falhas em código executável.
 
 **Mapa base**
 
 - propósito de exception;
 - fluxo de `try` e `catch`;
-- tratamentos específicos e hierarquia;
-- `finally` e liberação de recursos;
+- tratamentos específicos, ordem e hierarquia;
 - checked versus unchecked;
 - `throw`;
 - `throws`;
 - exception customizada;
+- mensagem, dados úteis e encadeamento de causa;
 - escolha entre tratar e propagar;
+- `finally` e `try-with-resources`;
 - preservação de estado em caso de falha;
 - fallback somente quando produz resultado válido.
 
-**Plano-base — 3 blocos**
+**Escopo ensinado:** fluxo normal e excepcional, `Exception` versus `RuntimeException`, catches do específico para o geral, criação completa de exception checked e unchecked, construtores, `throw`, declaração `throws`, rethrow, cause chaining, `finally`, `AutoCloseable` e `try-with-resources`. A escolha checked/unchecked é ensinada como decisão de contrato e possibilidade razoável de recuperação, não como tabela mecânica nem meio de “garantir retorno”. Logging profissional fica no Episode 32; tradução HTTP de erros, no Episode 42.
+
+**Plano-base — 4 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Quando o fluxo quebra | propósito, `try`, `catch`, hierarquia, `finally`, checked e unchecked | Laboratório guiado executável com caminhos normal e excepcional. Termina quando o aprendiz rastrear ambos e distinguir as duas classificações sem adivinhar sintaxe. |
-| 2. Criar e lançar o guardião | `throw`, `throws`, exception customizada e preservação de estado | Exception customizada escrita pelo aprendiz após exemplo genérico, lançada em regra real e propagada ou capturada. Termina quando a falha não modificar o estado e isso for observado. |
-| 3. Tratar, propagar ou recuperar | decisão de tratamento, fallback válido e liberação confiável | Fluxos independentes com tratamento local, propagação e fallback apenas onde existe resultado válido. Termina após cenários positivos, negativos e de borda e defesa das decisões. |
+| 1. Quando o fluxo quebra | propósito, fluxo, hierarquia, checked e unchecked | Laboratório guiado mostra caminho normal, lançamento e ordem de catches; depois o aprendiz corrige classificações em casos concretos. Termina quando cada escolha tiver consequência compilável e observável. |
+| 2. Criar e lançar o guardião | `throw`, `throws`, construtores, customização, causa e estado | Após exemplo genérico completo, o aprendiz cria uma checked exception com dados úteis e a lança antes de qualquer mutação. Termina quando chamada propagar ou capturar e falha preservar o estado. |
+| 3. Sair da ruína com os recursos | tratamento versus propagação, fallback, `finally`, `AutoCloseable` e try-with-resources | Recurso fornecido torna abertura e fechamento observáveis; o aprendiz implementa fluxos local, propagado e recuperável. Termina quando recurso fechar em sucesso e falha, sem fallback mentiroso. |
+| 4. Mini-boss — A Fortaleza Inquebrável | mapa completo | Em domínio novo, o aprendiz protege uma operação composta com validação, exception customizada e decisão de tratamento; harness testa sucesso, inválido, falha intermediária, estado e recurso. Termina após revisão e defesa do fluxo. |
 
 **Evidência mínima obrigatória**
 
@@ -301,16 +390,50 @@ Previsões e leitura de pipelines servem para diagnóstico, mas não concluem o 
 - chamada que exige captura ou propagação de checked exception;
 - cenário unchecked justificado;
 - `try`/`catch` com comportamento observável;
-- verificação manual de que uma falha não corrompe o estado, usando harness fornecido pelo Sensei quando apropriado;
-- execução e explicação do fluxo completo.
+- causa preservada quando uma falha é traduzida;
+- `try-with-resources` fechando em sucesso e falha;
+- verificação de que falha não corrompe estado;
+- mini-boss executado e fluxo completo explicado.
+
+### Episode 14 — Os Tipos do Tempo e do Valor
+
+**Base:** complemento de Core Java moderno para backend.
+**Pré-requisitos:** Episodes 01–13 e Revisit 12.
+**Capacidade final:** modelar valores de domínio imutáveis, precisos e temporalmente corretos usando tipos adequados.
+
+**Mapa base**
+
+- `enum` com comportamento e valores válidos fechados;
+- `record` como portador imutável de dados;
+- imutabilidade, cópia defensiva e validação de nascimento;
+- igualdade de valores;
+- `BigDecimal`, escala, arredondamento e comparação;
+- `LocalDate`, `LocalDateTime` e `Instant`;
+- `Duration` e `Period`;
+- parsing e formatação com `DateTimeFormatter`;
+- diferença entre horário local, instante e fuso;
+- escolha do tipo pelo significado do domínio.
+
+**Escopo ensinado:** declaração e uso de `enum` e `record`, compact constructor, `BigDecimal` criado por `String`/`valueOf`, `add`, `subtract`, `multiply`, `divide` com rounding explícito, `compareTo`, principais tipos imutáveis de `java.time`, parse/format e aritmética. Persistência JPA e serialização desses tipos aparecem em seus Episodes profissionais.
+
+**Plano-base — 4 blocos**
+
+| Bloco | Mapa principal | Entrega e ponto de parada |
+|---|---|---|
+| 1. Fechar os estados válidos | `enum`, comportamento e escolha de tipo | Estado textual frágil é substituído por enum guiado; o aprendiz cria outro enum com regra pequena. Termina após valor válido, transição e entrada inválida. |
+| 2. Forjar valores imutáveis | `record`, invariantes, igualdade e cópia defensiva | Exemplo mostra semântica de valor; o aprendiz cria record validado e comprova igualdade e imutabilidade. Termina sem expor coleção mutável interna. |
+| 3. Medir sem distorcer | `BigDecimal` e `java.time` | Laboratórios mostram erro de `double`, identidade decimal e diferença entre data local e instante; operações autorais cobrem dinheiro, duração e formatação. Termina após bordas de arredondamento e tempo. |
+| 4. Mini-boss — O Cofre Cronal | integração dos tipos | Pequeno domínio de reserva ou cobrança é implementado com enum, record, valor monetário e tempo. Harness fornecido executa sucesso, entrada inválida, arredondamento e limite temporal. Termina com defesa dos tipos escolhidos. |
+
+**Evidência mínima:** aplicação autoral executável com `enum`, `record` validado, `BigDecimal` sem construção imprecisa, `java.time`, casos de borda e mini-boss final.
 
 ### Boss Battle V — A Graduação do Core Java
 
-Integra modelagem, Collections, generics, Streams, `Optional` e exceptions em uma aplicação nova ou evolução explicitamente aceita.
+Integra modelagem, Collections, generics, arsenal funcional, `Optional`, exceptions e tipos modernos em aplicação nova.
 
 **Pré-condições**
 
-- Episodes 12 e 13 aprovados com evidência executável independente;
+- Revisit 12 e Episodes 13–14 aprovados com evidência executável independente;
 - nenhuma API essencial à solução ainda desconhecida;
 - briefing e escopo aprovados antes de `MISSION START`.
 
@@ -322,6 +445,7 @@ Integra modelagem, Collections, generics, Streams, `Optional` e exceptions em um
 - representar ausência conscientemente;
 - implementar e tratar falhas;
 - preservar estado diante de erro;
+- modelar estados, dinheiro e tempo com tipos adequados;
 - testar cenários principais e adversariais;
 - explicar e defender o código criado.
 
@@ -329,12 +453,12 @@ Integra modelagem, Collections, generics, Streams, `Optional` e exceptions em um
 
 | Bloco | Convergência principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Erguer o domínio | responsabilidades, objetos, Collections e generics | Modelo e armazenamento de uma aplicação nova, escritos pelo aprendiz e compilando. Termina quando identidades, responsabilidades e operações obrigatórias estiverem concretas. |
+| 1. Erguer o domínio | responsabilidades, objetos, Collections, generics e tipos de valor | Modelo e armazenamento de uma aplicação nova, escritos pelo aprendiz e compilando. Termina quando identidades, invariantes e operações obrigatórias estiverem concretas. |
 | 2. Fazer os dados fluírem | pipelines, `Optional` e composição legível | Consultas e agregações implementadas sem algoritmo central fornecido. Termina após execução de resultados presentes, ausentes e de borda. |
 | 3. Proteger o estado | exceptions, decisões de tratamento e integridade | Regras inválidas falham de modo observável sem corromper estado. Termina após testes manuais positivos e adversariais. |
 | 4. Graduação | integração, testes e defesa | Aplicação completa executada pelo `main` ou harness integrado, revisão adversarial e explicação das decisões. Termina apenas quando todos os critérios de convergência possuírem evidência real. |
 
-**Evidência final:** aplicação escrita pelo aprendiz, ponto de entrada integrado pelo Sensei quando não for alvo, execução e revisão adversarial.
+**Evidência final:** aplicação nova escrita pelo aprendiz, ponto de entrada integrado pelo Sensei quando não for alvo, execução única reproduzível e revisão adversarial.
 
 ---
 
@@ -342,7 +466,7 @@ Integra modelagem, Collections, generics, Streams, `Optional` e exceptions em um
 
 ### Side Quest 01 — As Portas da Interface
 
-**Base:** Chapter 14 — GUI, eventos, listeners, desenho e classes internas.  
+**Base:** Chapter 14 — GUI, eventos, listeners, desenho e classes internas.
 **Capacidade final:** construir e explicar uma interação gráfica simples sem misturar todo o comportamento na janela.
 
 **Mapa base**
@@ -366,7 +490,7 @@ Integra modelagem, Collections, generics, Streams, `Optional` e exceptions em um
 
 ### Side Quest 02 — O Laboratório Swing
 
-**Base:** Chapter 15 — componentes, layouts e organização de interfaces desktop.  
+**Base:** Chapter 15 — componentes, layouts e organização de interfaces desktop.
 **Capacidade final:** organizar uma interface Swing pequena com layout previsível e código sustentável.
 
 **Mapa base**
@@ -394,7 +518,7 @@ Não bloqueiam a trilha profissional.
 
 ## 8. Saga VI — A Ponte para o Backend
 
-### Episode 14 — O Ritual Maven
+### Episode 15 — O Ritual Maven
 
 **Capacidade final:** criar, executar e diagnosticar um build Maven reproduzível.
 
@@ -404,6 +528,8 @@ Não bloqueiam a trilha profissional.
 - estrutura padrão `src/main` e `src/test`;
 - `pom.xml`;
 - coordenadas `groupId`, `artifactId` e `version`;
+- versão do Java e configuração do compilador;
+- Maven Wrapper;
 - fases `clean`, `compile`, `test`, `package` e `verify`;
 - diretório `target` e artefato;
 - leitura de falhas de build.
@@ -412,13 +538,13 @@ Não bloqueiam a trilha profissional.
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Ler o ritual | build tool, estrutura, POM e coordenadas | Projeto Maven mínimo criado com orientação e compilado pela linha de comando ou IntelliJ. Termina quando cada parte essencial puder ser localizada e explicada. |
+| 1. Ler o ritual | build tool, estrutura, POM, coordenadas e Java | Projeto Maven mínimo criado com orientação, JDK LTS fixado e compilado pela linha de comando ou IntelliJ. Termina quando cada parte essencial puder ser localizada e explicada. |
 | 2. Percorrer o ciclo | fases, `target` e empacotamento | Sequência `clean`, `compile`, `test`, `package` e `verify` executada; artefatos são inspecionados. Termina quando o aprendiz relacionar comando, fase e resultado. |
-| 3. Reconstruir sem magia | build reproduzível e diagnóstico | Pequeno projeto Maven montado ou reparado independentemente e executado a partir de estado limpo. Termina após correção de ao menos uma falha real de build. |
+| 3. Reconstruir sem magia | Wrapper, build reproduzível e diagnóstico | Pequeno projeto Maven é montado ou reparado e executado pelo Wrapper a partir de estado limpo. Termina após correção de ao menos uma falha real de build. |
 
-**Evidência mínima:** `pom.xml` autoral, estrutura válida, `mvn clean verify` bem-sucedido, artefato observado e diagnóstico explicado.
+**Evidência mínima:** `pom.xml` autoral, JDK fixado, estrutura válida, Maven Wrapper, `mvnw clean verify` bem-sucedido, artefato observado e diagnóstico explicado.
 
-### Episode 15 — A Forja das Dependências
+### Episode 16 — A Forja das Dependências
 
 **Capacidade final:** adicionar e diagnosticar dependências e plugins sem transformar o `pom.xml` em tentativa e erro.
 
@@ -443,7 +569,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** uso real de dependência, scope coerente, plugin reconhecido, árvore inspecionada e build reproduzível.
 
-### Episode 16 — O Tribunal dos Testes
+### Episode 17 — O Tribunal dos Testes
 
 **Capacidade final:** escrever testes JUnit úteis, independentes e executáveis pelo Maven.
 
@@ -454,6 +580,7 @@ Não bloqueiam a trilha profissional.
 - Arrange, Act, Assert;
 - assertions essenciais;
 - `assertThrows`;
+- `@ParameterizedTest` e fontes simples de argumentos;
 - casos positivos, negativos e de borda;
 - independência e repetibilidade;
 - nomes e mensagens diagnósticas;
@@ -464,12 +591,12 @@ Não bloqueiam a trilha profissional.
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Abrir o tribunal | `@Test`, AAA e assertions | Teste guiado executado pelo Maven e falha proposital interpretada. Termina quando o aprendiz localizar preparação, ação e verificação. |
-| 2. Construir o caso | positivos, negativos, bordas e `assertThrows` | Conjunto independente de testes para comportamento conhecido. Termina quando uma implementação defeituosa for detectada por ao menos um teste autoral. |
+| 2. Construir o caso | positivos, negativos, bordas, `assertThrows` e parametrização | Conjunto independente de testes para comportamento conhecido, incluindo tabela pequena de casos. Termina quando uma implementação defeituosa for detectada por ao menos um teste autoral. |
 | 3. Julgamento reproduzível | independência, nomes e execução | Suíte revisada para eliminar dependência de ordem e estado compartilhado. Termina com `mvn test` repetido com o mesmo resultado. |
 
-**Evidência mínima:** testes autorais que passam, teste que demonstra falha útil, cenário excepcional, borda e execução Maven reproduzível.
+**Evidência mínima:** testes autorais que passam, teste que demonstra falha útil, cenário excepcional, teste parametrizado de bordas e execução Maven reproduzível.
 
-### Episode 17 — Os Pergaminhos JSON e o Git da Guilda
+### Episode 18 — Os Pergaminhos JSON e o Git da Guilda
 
 **Capacidade final:** transformar objetos em JSON e preservar a evolução do trabalho em um histórico Git compreensível.
 
@@ -482,7 +609,9 @@ Não bloqueiam a trilha profissional.
 - falha de entrada JSON;
 - `status`, `diff`, staging e commit;
 - commits coerentes;
-- branches e histórico;
+- remotes, `fetch`, `pull` e `push`;
+- branches, merge, conflito e histórico;
+- pull request como revisão e integração;
 - `.gitignore` e artefatos gerados.
 
 **Plano-base — 4 blocos**
@@ -492,9 +621,9 @@ Não bloqueiam a trilha profissional.
 | 1. Ler o pergaminho | estrutura e tipos JSON | Exemplos normais e inválidos rastreados; JSON pequeno escrito pelo aprendiz. Termina quando estrutura, valor e ausência não forem confundidos. |
 | 2. Traduzir entre mundos | serialização, desserialização e campos | Round trip guiado seguido de conversão independente usando biblioteca já declarada no Maven. Termina após casos normal e inválido. |
 | 3. Registrar a jornada | `status`, `diff`, staging, commits e `.gitignore` | Mudanças reais separadas em commits coerentes pelo aprendiz. Termina quando cada diff e mensagem corresponderem a uma intenção. |
-| 4. Preservar sem esconder | branches, histórico e integração | Pequena evolução realizada em branch e integrada sem perder histórico. Termina com aplicação e testes reproduzíveis no estado final. |
+| 4. Preservar sem esconder | remotes, branches, conflito, pull request e histórico | Pequena evolução é publicada em branch, revisada e integrada após resolver conflito controlado sem perder trabalho. Termina com aplicação e testes reproduzíveis no estado final. |
 
-**Evidência mínima:** aplicação Maven com JSON lido e produzido, erro inválido observado e sequência Git real revisada pelo Sensei.
+**Evidência mínima:** aplicação Maven com JSON lido e produzido, erro inválido observado e fluxo Git real com branch, remote, push, revisão, conflito controlado e integração inspecionada.
 
 ### Checkpoint — O Ambiente Profissional
 
@@ -524,9 +653,9 @@ Não bloqueiam a trilha profissional.
 
 ## 9. Saga VII — O Reino dos Dados
 
-**Ambiente padrão da Saga:** PostgreSQL local para os Episodes 18–26. Instalação, credenciais de desenvolvimento e comandos de inicialização são infraestrutura fornecida pelo Sensei, não prova do conteúdo. Se o ambiente impedir PostgreSQL, um único substituto relacional é acordado para toda a Saga VII e VIII; não se troca de motor por Episode.
+**Ambiente padrão das Sagas VII–VIII:** PostgreSQL local para os Episodes 19–27. Instalação, credenciais de desenvolvimento e comandos de inicialização são infraestrutura fornecida pelo Sensei, não prova do conteúdo. Se o ambiente impedir PostgreSQL, um único substituto relacional é acordado para as duas Sagas; não se troca de motor por Episode.
 
-### Episode 18 — As Tabelas da Verdade
+### Episode 19 — As Tabelas da Verdade
 
 **Capacidade final:** criar e executar um esquema relacional pequeno que proteja dados básicos por restrições.
 
@@ -551,9 +680,9 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** script SQL executável, esquema recriável, inserções válidas e violações de ao menos três restrições observadas.
 
-### Episode 19 — O Oráculo das Consultas
+### Episode 20 — O Oráculo das Consultas
 
-**Capacidade final:** escrever e depurar consultas que retornem exatamente o conjunto solicitado.
+**Capacidade final:** escrever, depurar e inspecionar consultas que retornem exatamente o conjunto solicitado sem ignorar custo básico.
 
 **Mapa base**
 
@@ -565,19 +694,22 @@ Não bloqueiam a trilha profissional.
 - tratamento de `NULL` em filtros;
 - `ORDER BY`, desempates e `LIMIT`;
 - agregações básicas;
-- leitura incremental de consultas.
+- leitura incremental de consultas;
+- finalidade e custo de índices;
+- `EXPLAIN` e leitura básica de plano.
 
-**Plano-base — 3 blocos**
+**Plano-base — 4 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Perguntar com precisão | seleção, projeção, aliases e filtros | Consultas guiadas seguidas de filtros autorais. Termina quando resultado e linhas excluídas puderem ser explicados. |
 | 2. Combinar critérios | operadores, texto, conjuntos, intervalos e `NULL` | Consultas independentes com critérios combinados e precedência explícita. Termina após cenários com resultado, vazio e valores nulos. |
 | 3. Ordenar e resumir | ordenação, desempate, limite e agregações | Relatório pequeno com ordem determinística e medidas agregadas. Termina após depuração de uma consulta defeituosa e validação manual do resultado. |
+| 4. Enxergar o caminho | índices, seletividade e `EXPLAIN` | Uma consulta sobre massa proporcional é observada antes e depois de índice coerente; índices inúteis também são discutidos. Termina quando plano, resultado e custo não forem confundidos e o mini-boss consultar com precisão. |
 
-**Evidência mínima:** arquivo de consultas executadas sobre dados conhecidos, incluindo combinação de filtros, `NULL`, ordenação determinística, limite, agregação e caso vazio.
+**Evidência mínima:** arquivo de consultas executadas sobre dados conhecidos, incluindo filtros, `NULL`, ordenação determinística, agregação, caso vazio, índice justificado, `EXPLAIN` comparado e mini-boss.
 
-### Episode 20 — As Escrituras Mutáveis
+### Episode 21 — As Escrituras Mutáveis
 
 **Capacidade final:** inserir, alterar e remover dados sem atingir linhas além das pretendidas.
 
@@ -602,7 +734,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** script DML executado com inserção, atualização, remoção, verificação de linhas afetadas e rollback observado.
 
-### Episode 21 — Os Laços Relacionais
+### Episode 22 — Os Laços Relacionais
 
 **Capacidade final:** relacionar tabelas e consultar dados combinados sem perder o significado das cardinalidades.
 
@@ -628,7 +760,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** esquema com foreign keys, relação muitos-para-muitos, joins internos e externos e falha de integridade observada.
 
-### Episode 22 — O Mapa Relacional
+### Episode 23 — O Mapa Relacional
 
 **Capacidade final:** transformar requisitos de negócio em um modelo relacional coerente e executável.
 
@@ -682,7 +814,7 @@ Não bloqueiam a trilha profissional.
 
 ## 10. Saga VIII — A Ponte JDBC
 
-### Episode 23 — O Portal da Conexão
+### Episode 24 — O Portal da Conexão
 
 **Capacidade final:** abrir, usar e fechar uma conexão JDBC real com diagnóstico seguro de falhas.
 
@@ -707,7 +839,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** aplicação Maven conecta ao PostgreSQL, fecha recursos, mantém credenciais fora do código versionado e demonstra diagnóstico de falha controlada.
 
-### Episode 24 — As Queries Seladas
+### Episode 25 — As Queries Seladas
 
 **Capacidade final:** executar consultas e alterações parametrizadas sem concatenar entrada em SQL.
 
@@ -732,7 +864,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** queries parametrizadas autorais, leitura, alteração, linhas afetadas, chave gerada e demonstração de que entrada maliciosa permanece dado.
 
-### Episode 25 — O Espelho do ResultSet
+### Episode 26 — O Espelho do ResultSet
 
 **Capacidade final:** transformar resultados JDBC em objetos Java sem perder linhas, tipos ou valores nulos.
 
@@ -758,7 +890,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** mapeamento autoral de `ResultSet` para objeto e coleção, com alias, campo nulo, resultado vazio e testes executáveis.
 
-### Episode 26 — Os Guardiões DAO
+### Episode 27 — Os Guardiões DAO
 
 **Capacidade final:** implementar um componente JDBC de persistência com CRUD, transações e responsabilidades claras.
 
@@ -818,7 +950,7 @@ Não bloqueiam a trilha profissional.
 
 **Ambiente padrão da Saga:** o Sensei fornece um servidor HTTP local pequeno ou harness equivalente. O aprendiz usa `curl` e arquivos de requisição para observar o protocolo e desenhar contratos; implementar um servidor só passa a ser alvo no Spring Boot.
 
-### Episode 27 — O Pacto Cliente-Servidor
+### Episode 28 — O Pacto Cliente-Servidor
 
 **Capacidade final:** executar uma troca HTTP e explicar o caminho completo entre cliente e servidor.
 
@@ -843,7 +975,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** comandos de cliente executados, URL explicada, requisição e resposta inspecionadas e ao menos duas falhas de comunicação diagnosticadas.
 
-### Episode 28 — Os Verbos do Protocolo
+### Episode 29 — Os Verbos do Protocolo
 
 **Capacidade final:** escolher método, status, headers e corpo coerentes para uma operação HTTP.
 
@@ -868,7 +1000,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** conjunto de requisições executadas com métodos diferentes, statuses interpretados, headers e bodies coerentes e justificativa de idempotência.
 
-### Episode 29 — Rotas, Parâmetros e JSON
+### Episode 30 — Rotas, Parâmetros e JSON
 
 **Capacidade final:** desenhar e exercitar endpoints com parâmetros e payloads sem ambiguidade contratual.
 
@@ -894,7 +1026,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** coleção versionada de requisições e contrato de endpoints com path, query, JSON, respostas normais e erros.
 
-### Episode 30 — A Lei dos Recursos REST
+### Episode 31 — A Lei dos Recursos REST
 
 **Capacidade final:** projetar um contrato REST coerente para um recurso e defendê-lo por comportamento HTTP.
 
@@ -952,33 +1084,39 @@ Não bloqueiam a trilha profissional.
 
 **Ambiente padrão da Saga:** projeto Maven com uma versão estável do Spring Boot e um JDK LTS compatível, fixados uma vez no briefing da Saga. Até a Boss Battle VI, o estado permanece em memória; banco e JPA não entram pela janela vestidos de NPC.
 
-### Episode 31 — O Portal Spring Boot
+### Episode 32 — O Portal Spring Boot
 
-**Capacidade final:** criar, iniciar e diagnosticar uma aplicação Spring Boot mínima.
+**Capacidade final:** criar, configurar, observar e diagnosticar uma aplicação Spring Boot reproduzível em mais de um ambiente.
 
 **Mapa base**
 
 - propósito do Spring Boot;
 - estrutura do projeto;
 - parent/BOM e starters;
+- annotations como metadados e descoberta pelo framework;
 - classe com `@SpringBootApplication`;
 - inicialização pelo Maven e IDE;
 - servidor embarcado e porta;
 - configuração em `application.properties` ou YAML;
+- configuração externa, variáveis de ambiente e precedência;
+- profiles;
+- segredos fora do repositório;
 - logs e falhas de startup;
-- endpoint de verificação fornecido.
+- níveis básicos de log;
+- Actuator e health check.
 
-**Plano-base — 3 blocos**
+**Plano-base — 4 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Montar o portal | estrutura, starters e classe inicial | Projeto gerado com escolhas explicadas e iniciado. Termina quando o aprendiz localizar entrada, dependências e pacotes. |
-| 2. Ver o servidor respirar | execução, porta, configuração e logs | Aplicação acessada por cliente HTTP e configuração simples alterada. Termina quando mudança de porta e ciclo de startup forem observados. |
-| 3. Diagnosticar a abertura | falhas de startup e build | Problemas controlados de configuração, porta e dependência são corrigidos. Termina com `mvn clean verify` e startup reproduzível. |
+| 2. Ver o servidor respirar | execução, porta, configuração e logs | Aplicação acessada por cliente HTTP, configuração simples alterada e log útil emitido. Termina quando mudança de porta e ciclo de startup forem observados. |
+| 3. Trocar de dimensão | ambiente, precedência, profiles e segredos | Dois profiles executam configurações diferentes e um valor sensível vem de ambiente sem ser versionado. Termina quando a origem efetiva de cada valor puder ser rastreada. |
+| 4. Diagnosticar a abertura | falhas, níveis de log, Actuator, health e build | Problemas controlados de configuração, porta e dependência são corrigidos; health é consultado. Termina com mini-boss, `mvn clean verify` e startup reproduzível. |
 
-**Evidência mínima:** aplicação Spring Boot criada pelo aprendiz, build limpo, servidor iniciado, configuração alterada e ao menos duas falhas diagnosticadas.
+**Evidência mínima:** aplicação Spring Boot criada pelo aprendiz, dois profiles, configuração externa sem segredo versionado, logs úteis, health consultado, build limpo e ao menos duas falhas diagnosticadas.
 
-### Episode 32 — Os Controladores da Fortaleza
+### Episode 33 — Os Controladores da Fortaleza
 
 **Capacidade final:** implementar controllers que cumpram rotas e respostas HTTP já especificadas.
 
@@ -1004,7 +1142,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** endpoints autorais com métodos, path, query, serialização e statuses, exercitados por cliente e testes.
 
-### Episode 33 — Os Beans do Conselho
+### Episode 34 — Os Beans do Conselho
 
 **Capacidade final:** separar responsabilidades e conectá-las por injeção de dependência do Spring.
 
@@ -1030,7 +1168,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** componentes autorais ligados por constructor injection, responsabilidades separadas e teste que substitui uma dependência sem iniciar lógica externa desnecessária.
 
-### Episode 34 — Contratos de Entrada e Saída
+### Episode 35 — Contratos de Entrada e Saída
 
 **Capacidade final:** receber e devolver JSON por Spring com comportamento observável para entradas normais e malformadas.
 
@@ -1087,7 +1225,7 @@ Não bloqueiam a trilha profissional.
 
 ## 13. Saga XI — As Camadas e o Registro Permanente
 
-### Episode 35 — As Camadas do Reino
+### Episode 36 — As Camadas do Reino
 
 **Capacidade final:** organizar uma funcionalidade entre camadas com responsabilidades e dependências defensáveis.
 
@@ -1098,6 +1236,7 @@ Não bloqueiam a trilha profissional.
 - service;
 - repository;
 - responsabilidade e fronteira de cada camada;
+- coesão, acoplamento e SOLID como heurísticas, não dogma;
 - direção das dependências;
 - regra de negócio versus transporte e persistência;
 - injeção por construtor;
@@ -1107,13 +1246,13 @@ Não bloqueiam a trilha profissional.
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Traçar as fronteiras | domínio e responsabilidades | Código misturado é analisado e responsabilidades são distribuídas. Termina quando cada decisão tiver um motivo além do nome da pasta. |
+| 1. Traçar as fronteiras | domínio, responsabilidades, coesão, acoplamento e SOLID | Código misturado é analisado e responsabilidades são distribuídas. Termina quando cada decisão tiver um motivo além do nome da pasta ou de citar uma sigla. |
 | 2. Fazer a chamada atravessar | controller, service, repository e direção | Fluxo guiado atravessa camadas por injeção. Termina quando dependências apontarem para dentro do comportamento e nenhuma camada pular responsabilidade sem motivo. |
 | 3. Implementar uma regra limpa | negócio e testabilidade | Funcionalidade autoral é implementada e o serviço testado sem HTTP ou banco real. Termina após revisão de acoplamento e comportamento. |
 
-**Evidência mínima:** fluxo autoral dividido entre camadas, regra no serviço, dependências injetadas e teste unitário sem contexto Spring completo.
+**Evidência mínima:** fluxo autoral dividido entre camadas, regra no serviço, dependências injetadas, refatoração justificada por coesão/acoplamento e teste unitário sem contexto Spring completo.
 
-### Episode 36 — O CRUD dos Clãs
+### Episode 37 — O CRUD dos Clãs
 
 **Capacidade final:** implementar o ciclo completo de vida de um recurso e tratar identidade, conflito e ausência.
 
@@ -1140,7 +1279,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** CRUD autoral em memória, com testes positivos, inexistência, conflito, atualização segura e contrato HTTP exercitado.
 
-### Episode 37 — O Pacto das Entidades
+### Episode 38 — O Pacto das Entidades
 
 **Capacidade final:** persistir uma entidade simples por JPA e explicar o que o ORM faz entre objeto e tabela.
 
@@ -1152,21 +1291,24 @@ Não bloqueiam a trilha profissional.
 - identidade com `@Id` e geração;
 - tabelas e colunas;
 - configuração de datasource e schema;
+- migrations versionadas com Flyway;
+- validação de schema em vez de mutação automática em ambiente compartilhado;
 - estados básicos da entidade;
 - persistência e recuperação;
 - logs SQL e limites da abstração.
 
-**Plano-base — 3 blocos**
+**Plano-base — 4 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Firmar o pacto | ORM, JPA, implementação e entidade | Entidade guiada é mapeada e tabela correspondente inspecionada. Termina quando especificação, implementação, objeto e linha não forem confundidos. |
 | 2. Dar identidade persistente | `@Id`, geração, colunas e estados | Entidade autoral é salva e recuperada, com id antes e depois observado. Termina quando ciclo básico estiver explicado. |
-| 3. Olhar por baixo da magia | configuração, schema e SQL | Mapeamentos e configuração defeituosos são diagnosticados pelos logs. Termina com teste de integração contra PostgreSQL e schema coerente. |
+| 3. Versionar o chão | Flyway, ordem de migrations e validação de schema | Schema deixa de depender de criação automática e nasce de migrations versionadas. Termina após reconstrução limpa e falha de migration diagnosticada. |
+| 4. Olhar por baixo da magia | configuração, estados e SQL | Mapeamentos e configuração defeituosos são diagnosticados pelos logs. Termina com mini-boss, teste de integração contra PostgreSQL e schema coerente. |
 
-**Evidência mínima:** entidade autoral persistida e recuperada, tabela inspecionada, id observado, SQL analisado e teste de integração real.
+**Evidência mínima:** entidade autoral persistida e recuperada, migrations Flyway reproduzíveis, tabela e id inspecionados, SQL analisado, falha diagnosticada e teste de integração real.
 
-### Episode 38 — Os Repositórios do Subsolo
+### Episode 39 — Os Repositórios do Subsolo
 
 **Capacidade final:** usar Spring Data JPA conscientemente para CRUD e consultas simples sem perder o contrato do domínio.
 
@@ -1192,7 +1334,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** repository autoral, CRUD persistente, consultas derivadas testadas, ausência representada e SQL gerado inspecionado.
 
-### Episode 39 — Laços Persistentes
+### Episode 40 — Laços Persistentes
 
 **Capacidade final:** mapear relações JPA preservando cardinalidade, ciclo de vida e contrato JSON.
 
@@ -1208,17 +1350,19 @@ Não bloqueiam a trilha profissional.
 - consistência dos dois lados em memória;
 - ciclos de serialização;
 - consultas e desempenho básico.
+- `@Transactional` na fronteira de serviço;
+- rollback de operação composta.
 
 **Plano-base — 4 blocos**
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Mapear o vínculo | cardinalidade, anotações e lado responsável | Relação um-para-muitos guiada é persistida e tabelas inspecionadas. Termina quando `mappedBy` e foreign key forem relacionados. |
-| 2. Manter os dois lados | consistência, cascata e orphan removal | Métodos de domínio autorais mantêm a associação e cenários de remoção são executados. Termina quando efeitos de ciclo de vida forem intencionais. |
-| 3. Carregar sem explodir | lazy, eager, consultas e sessão | Acesso a relações é observado com logs e testes. Termina quando consultas extras e limites de contexto forem reconhecidos. |
+| 2. Manter os dois lados | consistência, cascata, orphan removal e transação de serviço | Métodos autorais mantêm a associação dentro de fronteira transacional explícita. Termina quando efeitos de ciclo de vida forem intencionais. |
+| 3. Carregar sem explodir | lazy, eager, consultas, sessão e rollback | Acesso a relações é observado com logs e uma falha intermediária comprova rollback. Termina quando consultas extras, contexto e atomicidade forem reconhecidos. |
 | 4. Romper o ciclo JSON | serialização e contrato | Endpoint relacional deixa de recursar ou vazar grafo indevido. Termina após respostas JSON e testes de integração coerentes. |
 
-**Evidência mínima:** relações autorais persistidas, owner defendido, cascatas testadas, carregamento observado e JSON sem ciclo.
+**Evidência mínima:** relações autorais persistidas, owner defendido, cascatas testadas, fronteira `@Transactional`, rollback observado, carregamento analisado e JSON sem ciclo.
 
 ### Checkpoint — O Sistema Persistente da Guilda
 
@@ -1252,7 +1396,7 @@ Não bloqueiam a trilha profissional.
 
 ## 14. Saga XII — Os Contratos da API Profissional
 
-### Episode 40 — O Selo da Validação
+### Episode 41 — O Selo da Validação
 
 **Capacidade final:** rejeitar entradas inválidas na fronteira correta e devolver evidência clara do problema.
 
@@ -1278,7 +1422,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** contrato de entrada autoral com validações, mensagens úteis, aninhamento proporcional e testes que distinguem formato inválido de conflito de negócio.
 
-### Episode 41 — O Guardião dos Erros Globais
+### Episode 42 — O Guardião dos Erros Globais
 
 **Capacidade final:** transformar falhas da aplicação em respostas HTTP consistentes sem espalhar `try/catch` pelos controllers.
 
@@ -1304,7 +1448,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** tratamento global autoral para domínio e validação, fallback seguro para inesperados e testes de status e corpo.
 
-### Episode 42 — DTOs: Os Contratos da Fortaleza
+### Episode 43 — DTOs: Os Contratos da Fortaleza
 
 **Capacidade final:** definir contratos de entrada e saída independentes das entidades persistentes e mapear entre eles conscientemente.
 
@@ -1330,7 +1474,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** DTOs autorais de entrada e saída, mapeamento testado, validação na fronteira e entidade não exposta diretamente.
 
-### Episode 43 — O Arquivo Infinito
+### Episode 44 — O Arquivo Infinito
 
 **Capacidade final:** oferecer coleções grandes com paginação, ordenação e filtros previsíveis.
 
@@ -1358,7 +1502,7 @@ Não bloqueiam a trilha profissional.
 
 **Evidência mínima:** endpoint autoral paginado, ordenação estável, filtros combináveis, limites, metadados e testes contra banco real.
 
-### Episode 44 — O Olho do Testador
+### Episode 45 — O Olho do Testador
 
 **Capacidade final:** construir uma estratégia de testes proporcional e documentação executável para uma API Spring.
 
@@ -1368,7 +1512,9 @@ Não bloqueiam a trilha profissional.
 - teste unitário de serviço;
 - teste web de controller;
 - teste de integração;
-- mocks e seus limites;
+- Mockito: mocks, stubs e `verify`;
+- limites de mocks;
+- Testcontainers com PostgreSQL;
 - isolamento de dados;
 - fixtures legíveis;
 - build como gate;
@@ -1379,12 +1525,76 @@ Não bloqueiam a trilha profissional.
 
 | Bloco | Mapa principal | Entrega e ponto de parada |
 |---|---|---|
-| 1. Escolher a lente | escopos, serviço e mocks | Comportamentos são distribuídos entre testes unitários e integração. Termina quando cada teste justificar o que isola. |
+| 1. Escolher a lente | escopos, serviço e Mockito | Comportamentos são distribuídos entre testes unitários e integração; serviço usa mock, stub e verificação proporcional. Termina quando cada teste justificar o que isola e o que não prova. |
 | 2. Testar a fronteira web | controller, serialização, validação e erros | Testes web autorais verificam status e body sem depender de banco real. Termina após caminhos principal e adversariais. |
-| 3. Testar o sistema unido | integração, banco e isolamento | Fluxos reais usam banco de teste com dados independentes. Termina quando repetição e ordem não alterarem o resultado. |
+| 3. Testar o sistema unido | integração, Testcontainers, PostgreSQL e isolamento | Fluxos reais sobem banco descartável e usam dados independentes. Termina quando repetição, máquina e ordem não alterarem o resultado. |
 | 4. Tornar o contrato visível | build, OpenAPI e coerência | Documentação é gerada e confrontada com requisições e testes. Termina com `clean verify` como gate reproduzível. |
 
-**Evidência mínima:** suíte autoral em mais de um nível, isolamento demonstrado, build limpo e documentação OpenAPI conferida contra a aplicação.
+**Evidência mínima:** suíte autoral em mais de um nível, Mockito usado e limitado conscientemente, integração PostgreSQL via Testcontainers, isolamento demonstrado, build limpo e OpenAPI conferida contra a aplicação.
+
+### Episode 46 — O Portão dos Guardiões
+
+**Capacidade final:** proteger uma API Spring com autenticação e autorização testáveis, sem guardar credenciais ou segredos de forma insegura.
+
+**Mapa base**
+
+- autenticação versus autorização;
+- fluxo básico do Spring Security;
+- `SecurityFilterChain`;
+- identidade, roles e authorities;
+- hash de senha com `PasswordEncoder`;
+- `401 Unauthorized` versus `403 Forbidden`;
+- princípio do menor privilégio;
+- JWT: emissão, assinatura, expiração e validação;
+- filtro de autenticação stateless;
+- configuração de segredo fora do repositório;
+- CORS e diferença para CSRF;
+- testes de endpoint público, autenticado e proibido.
+
+**Escopo ensinado:** configuração moderna por beans, cadastro/login proporcional, BCrypt, token JWT curto com claims mínimas, autorização por rota ou método e testes. OAuth2 social, refresh token, revogação distribuída e provedor externo ficam nos arcos avançados.
+
+**Plano-base — 4 blocos**
+
+| Bloco | Mapa principal | Entrega e ponto de parada |
+|---|---|---|
+| 1. Fechar o portão | fluxo, filter chain, 401/403 e menor privilégio | API inicialmente aberta recebe configuração guiada e testes de acesso. Termina quando ausência de identidade e falta de permissão não forem confundidas. |
+| 2. Proteger a identidade | usuário, senha, encoder e autenticação | Cadastro e autenticação armazenam somente hash e rejeitam credenciais inválidas. Termina após inspeção dos dados e testes adversariais básicos. |
+| 3. Carregar o selo | JWT, expiração, filtro, segredo e stateless | Token é emitido e validado em requisições; expirado e adulterado falham. Termina quando o aprendiz rastrear o token sem tratá-lo como criptografia do conteúdo. |
+| 4. Mini-boss — A Fortaleza Selada | autorização, CORS/CSRF e testes | Em recurso novo, o aprendiz define acessos por papel e completa endpoints protegidos. Harness testa público, autenticado, proibido, token inválido e menor privilégio. |
+
+**Evidência mínima:** API autoral com senha hasheada, login, JWT assinado e expirável, segredo externo, autorização por papel e testes reproduzíveis de `200`, `401` e `403`.
+
+### Episode 47 — A Nave de Entrega
+
+**Capacidade final:** empacotar, verificar e disponibilizar uma API com banco de forma reproduzível e observável.
+
+**Mapa base**
+
+- imagem versus container;
+- `Dockerfile`, contexto e `.dockerignore`;
+- build em múltiplos estágios;
+- usuário não root e configuração por ambiente;
+- rede, volume e Docker Compose;
+- aplicação e PostgreSQL reproduzíveis;
+- health check, logs e encerramento;
+- pipeline de integração contínua;
+- build e testes como gate;
+- secrets de CI;
+- deploy em ambiente escolhido;
+- smoke test e rollback operacional básico.
+
+**Escopo ensinado:** Docker/Compose, pipeline de CI no provedor do repositório e deploy simples em uma plataforma escolhida no briefing. Kubernetes, IaC, observabilidade distribuída e alta disponibilidade ficam nos arcos avançados.
+
+**Plano-base — 4 blocos**
+
+| Bloco | Mapa principal | Entrega e ponto de parada |
+|---|---|---|
+| 1. Selar a nave | imagem, Dockerfile, camadas, usuário e ambiente | Imagem autoral é construída e executa a API sem segredo embutido. Termina após inspeção do container e reconstrução limpa. |
+| 2. Montar a tripulação | Compose, rede, volume, banco e migrations | API e PostgreSQL sobem juntos e o schema nasce pelas migrations. Termina após reinício controlado, health e persistência observados. |
+| 3. Automatizar o lançamento | CI, cache proporcional, secrets e gates | Push em branch executa build e testes sem depender da máquina local. Termina quando falha impede o pipeline e correção o libera. |
+| 4. Mini-boss — O Primeiro Deploy | deploy, configuração, logs, smoke e recuperação | O aprendiz publica a API, executa smoke test e diagnostica uma configuração inválida controlada. Termina com URL funcional ou ambiente equivalente acordado e roteiro reproduzível. |
+
+**Evidência mínima:** Dockerfile e Compose autorais, aplicação e PostgreSQL reproduzíveis, migrations, health, CI com testes, secrets externos, deploy acessível ou equivalente acordado e smoke test documentado.
 
 ### Boss Battle VII — A API da Academia Backend
 
@@ -1399,9 +1609,11 @@ Não bloqueiam a trilha profissional.
 - DTOs e validação;
 - erros globais;
 - paginação, ordenação e filtros;
+- autenticação e autorização;
 - testes em níveis proporcionais;
 - documentação OpenAPI;
-- build, Git e reprodução.
+- logs, health e configuração externa;
+- Docker, CI, deploy, Git e reprodução.
 
 **Plano-base — 4 blocos**
 
@@ -1409,10 +1621,10 @@ Não bloqueiam a trilha profissional.
 |---|---|---|
 | 1. Arquitetar a academia | requisitos, domínio, dados e contrato | Projeto autoral é especificado e modelado antes do código. Termina quando escopo, entidades, relações e endpoints estiverem aprovados. |
 | 2. Construir o núcleo | camadas, persistência, CRUD e regras | Fluxos principais são implementados e testados. Termina quando banco e regras funcionarem sem atalhos entre camadas. |
-| 3. Fortalecer os contratos | DTOs, validação, erros e consultas | Fronteiras profissionais são adicionadas e exercitadas. Termina após cenários normais, inválidos, ausentes, conflitantes e paginados. |
-| 4. Preparar para inspeção | testes, documentação, build e Git | Revisão adversarial, reprodução limpa e defesa técnica. Termina somente com todo o mapa comprovado e nenhuma falha bloqueante. |
+| 3. Fortalecer os contratos | DTOs, validação, erros, consultas e segurança | Fronteiras profissionais e autorização são adicionadas e exercitadas. Termina após cenários normais, inválidos, ausentes, conflitantes, paginados, não autenticados e proibidos. |
+| 4. Preparar para inspeção | testes, documentação, Docker, CI, deploy e Git | Revisão adversarial, reprodução limpa, health, publicação e defesa técnica. Termina somente com todo o mapa comprovado e nenhuma falha bloqueante. |
 
-**Evidência final:** API Spring Boot autoral persistente, documentada, testada, reproduzível e defendida pelo aprendiz.
+**Evidência final:** API Spring Boot autoral persistente, segura, documentada, testada, containerizada, publicada, reproduzível e defendida pelo aprendiz.
 
 ---
 
@@ -1422,7 +1634,7 @@ Não bloqueiam a trilha profissional.
 
 Projeto autoral de portfólio. O aprendiz escolhe domínio, levanta requisitos, modela, implementa, testa, documenta, mantém histórico Git e defende decisões.
 
-**Capacidade final:** construir e explicar uma API Java Backend Junior completa com Spring Boot, banco relacional, CRUD, validação, erros, DTOs, consultas, testes e build reproduzível.
+**Capacidade final:** construir, proteger, publicar e explicar uma API Java Backend Junior completa com Spring Boot, PostgreSQL e entrega reproduzível.
 
 **Mapa de convergência**
 
@@ -1432,12 +1644,14 @@ Projeto autoral de portfólio. O aprendiz escolhe domínio, levanta requisitos, 
 - arquitetura e direção de dependências;
 - implementação incremental;
 - persistência e transações;
+- migrations e reconstrução de banco;
 - validação, DTOs e erros;
 - consultas, paginação e ordenação;
+- autenticação e autorização;
 - estratégia de testes;
 - documentação técnica e OpenAPI;
 - histórico Git profissional;
-- deploy ou execução reproduzível;
+- logs, health, Docker, CI e deploy;
 - defesa de decisões e trade-offs.
 
 **Plano-base — 4 blocos**
@@ -1445,18 +1659,18 @@ Projeto autoral de portfólio. O aprendiz escolhe domínio, levanta requisitos, 
 | Bloco | Convergência principal | Entrega e ponto de parada |
 |---|---|---|
 | 1. Escolher a missão | problema, usuário, requisitos e escopo | Proposta autoral é recortada em versão realizável, com fora de escopo explícito. Termina após aprovação do problema e da condição de vitória. |
-| 2. Projetar antes de erguer | domínio, dados, arquitetura, API e testes | Modelo, esquema, contratos, decisões e plano de fatias verticais são defendidos. Termina antes da implementação principal. |
-| 3. Construir por fatias | código, persistência, contratos e testes | Funcionalidades são entregues verticalmente em commits coerentes, cada uma executável. Termina quando o escopo aprovado estiver completo. |
-| 4. Exame final | adversários, documentação, reprodução e defesa | Build limpo, banco reconstruído, testes, OpenAPI, revisão técnica e apresentação final. Termina apenas quando outra pessoa puder executar e avaliar o projeto. |
+| 2. Projetar antes de erguer | domínio, dados, arquitetura, API, segurança e testes | Modelo, schema, contratos, ameaças básicas e plano de fatias verticais são defendidos. Termina antes da implementação principal. |
+| 3. Construir por fatias | código, persistência, segurança, contratos e testes | Funcionalidades são entregues verticalmente em commits coerentes, cada uma executável. Termina quando o escopo aprovado estiver completo. |
+| 4. Exame final | adversários, documentação, CI, deploy, reprodução e defesa | Build limpo, banco reconstruído, testes, OpenAPI, container, health, deploy, revisão técnica e apresentação final. Termina apenas quando outra pessoa puder executar e avaliar o projeto. |
 
-**Evidência final:** projeto original de portfólio no GitHub, com requisitos, aplicação, banco, testes, documentação, histórico, reprodução e defesa técnica pelo aprendiz.
+**Evidência final:** projeto original de portfólio no GitHub, com requisitos, aplicação segura, banco versionado, testes, documentação, CI, container, deploy, histórico, reprodução e defesa técnica pelo aprendiz.
 
 ---
 
 ## 16. Arcos avançados de Java
 
-Os Chapters 16–18 permanecem importantes e retornam quando houver contexto real para arquivos, rede, concorrência e temas avançados. Eles não bloqueiam a entrada no backend.
+Os Chapters 16–18 e os temas de concorrência avançada, mensageria, cache, microserviços, Kubernetes, infraestrutura como código e cloud específica permanecem importantes. Eles retornam depois do Exame Jonin, quando houver um sistema que justifique a complexidade, e não bloqueiam a entrada no backend.
 
 ---
 
-## Fim do Backendverse Curriculum v1.4.1
+## Fim do Backendverse Curriculum v1.5
