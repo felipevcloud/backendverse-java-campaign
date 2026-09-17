@@ -1,6 +1,6 @@
 # Backendverse Campaign
 
-**Atualizado em:** 14/09/2026
+**Atualizado em:** 16/09/2026
 
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`
 
@@ -12,13 +12,13 @@
 
 * **Saga:** Saga VI — A Ponte para o Backend
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Episode 16 — A Forja das Dependências
-* **Última missão executável aprovada:** Episode 15 — O Ritual Maven
+* **Próxima missão:** Episode 17 — O Tribunal dos Testes
+* **Última missão executável aprovada:** Episode 16 — A Forja das Dependências
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
 
-* Episodes 01–15 concluídos;
+* Episodes 01–16 concluídos;
 * Boss Battles I–V concluídas;
 * Core Java concluído com os 9 critérios de convergência da Boss Battle V aprovados;
 * Boss Battle V encerrada com aplicação integrada autoral, revisão adversarial e harness final com `14 PASS` e `0 FAIL`;
@@ -26,12 +26,16 @@
   `BigDecimal` e `java.time` possuem evidência executável integrada;
 * Episode 15 concluiu fundamentos de Maven com estrutura padrão, `pom.xml` autoral, Java 21, lifecycle, empacotamento,
   Maven Wrapper 3.9.16 e diagnóstico real de build;
-* o build do Episode 15 foi reproduzido com `mvnw.cmd clean verify`, com artefato JAR inspecionado;
+* Episode 16 concluiu dependências Maven com coordenadas, resolução local, transitividade, scopes `compile`, `test`,
+  `runtime` e `provided`, diferença entre dependência e plugin, goals, árvore de dependências e organização de packages;
+* o Episode 16 incluiu diagnóstico independente de configuração defeituosa, incorporação autoral de nova dependência,
+  inspeção de dependência transitiva e mini-boss final com caminhos vazio e não vazio;
+* o build final do Episode 16 foi reproduzido com `clean verify`, com `BUILD SUCCESS`;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Episode 16 — A Forja das Dependências.
+1. Episode 17 — O Tribunal dos Testes.
 
 ## Regra de manutenção
 
