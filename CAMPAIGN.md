@@ -1,6 +1,6 @@
 # Backendverse Campaign
 
-**Atualizado em:** 16/09/2026
+**Atualizado em:** 21/09/2026
 
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`
 
@@ -12,13 +12,13 @@
 
 * **Saga:** Saga VI — A Ponte para o Backend
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Episode 17 — O Tribunal dos Testes
-* **Última missão executável aprovada:** Episode 16 — A Forja das Dependências
+* **Próxima missão:** Episode 18 — Os Pergaminhos JSON e o Git da Guilda
+* **Última missão executável aprovada:** Episode 17 — O Tribunal dos Testes
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
 
-* Episodes 01–16 concluídos;
+* Episodes 01–17 concluídos;
 * Boss Battles I–V concluídas;
 * Core Java concluído com os 9 critérios de convergência da Boss Battle V aprovados;
 * Boss Battle V encerrada com aplicação integrada autoral, revisão adversarial e harness final com `14 PASS` e `0 FAIL`;
@@ -28,14 +28,17 @@
   Maven Wrapper 3.9.16 e diagnóstico real de build;
 * Episode 16 concluiu dependências Maven com coordenadas, resolução local, transitividade, scopes `compile`, `test`,
   `runtime` e `provided`, diferença entre dependência e plugin, goals, árvore de dependências e organização de packages;
-* o Episode 16 incluiu diagnóstico independente de configuração defeituosa, incorporação autoral de nova dependência,
-  inspeção de dependência transitiva e mini-boss final com caminhos vazio e não vazio;
-* o build final do Episode 16 foi reproduzido com `clean verify`, com `BUILD SUCCESS`;
+* Episode 17 concluiu fundamentos de testes automatizados com JUnit 5, `@Test`, Arrange-Act-Assert, assertions,
+  `assertThrows`, testes parametrizados com `@CsvSource`, casos positivos, negativos e de borda, independência,
+  repetibilidade e execução pelo Maven;
+* o mini-boss do Episode 17 produziu uma suíte autoral capaz de detectar regressão real de borda e retornar ao estado
+  saudável após a correção;
+* a suíte final do Episode 17 foi reproduzida com `15` testes, `0` failures e `0` errors, com `BUILD SUCCESS`;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Episode 17 — O Tribunal dos Testes.
+1. Episode 18 — Os Pergaminhos JSON e o Git da Guilda.
 
 ## Regra de manutenção
 
