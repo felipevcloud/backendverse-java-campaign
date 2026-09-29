@@ -1,6 +1,6 @@
 # Backendverse Campaign
 
-**Atualizado em:** 28/09/2026
+**Atualizado em:** 29/09/2026
 
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`
 
@@ -12,7 +12,7 @@
 
 * **Saga:** Saga VI — A Ponte para o Backend
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Checkpoint — O Ambiente Profissional
+* **Próxima missão:** Revisit 18 — A Oficina do Git
 * **Última missão executável aprovada:** Episode 18 — Os Pergaminhos JSON e o Git da Guilda
 * **Boss Battles concluídas:** I–V
 
@@ -36,8 +36,9 @@
 * a suíte final do Episode 17 foi reproduzida com `15` testes, `0` failures e `0` errors, com `BUILD SUCCESS`;
 * Episode 18 concluiu fundamentos de JSON com objetos, arrays, tipos, diferença entre representação JSON e objeto Java,
   serialização, desserialização, mapeamento com `@JsonProperty` e observação de entrada JSON inválida;
-* Episode 18 concluiu o fluxo Git com `status`, `diff`, staging, commits coerentes, `.gitignore`, remotes, `fetch`,
-  `pull`, `push`, branches, merge, conflito real, histórico e Pull Request;
+* Episode 18 percorreu o fluxo Git com `status`, `diff`, staging, commits coerentes, `.gitignore`, remotes, `fetch`,
+  `pull`, `push`, branches, merge, conflito real, histórico e Pull Request; a conquista histórica permanece aprovada, mas
+  foi aberta uma consolidação específica porque parte do fluxo foi executada com dependência excessiva de sequência pronta;
 * o mini-boss do Episode 18 produziu round trip JSON autoral para `Reliquia`, caso sintaticamente inválido e borda
   `cargas = 0`;
 * o PR #1 integrou o Episode 18 à `main` após conflito controlado e revisão do histórico;
@@ -46,7 +47,8 @@
 
 ## Sequência liberada
 
-1. Checkpoint — O Ambiente Profissional.
+1. Revisit 18 — A Oficina do Git.
+2. Checkpoint — O Ambiente Profissional.
 
 ## Regra de manutenção
 
