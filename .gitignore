@@ -27,5 +27,5 @@ replay_pid*
 .idea/
 *.iml
 
-# Maven generated output
+# Maven generated build artifacts
 target/
