@@ -1,6 +1,6 @@
 # Backendverse Campaign
 
-**Atualizado em:** 21/09/2026
+**Atualizado em:** 28/09/2026
 
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`
 
@@ -12,13 +12,13 @@
 
 * **Saga:** Saga VI — A Ponte para o Backend
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Episode 18 — Os Pergaminhos JSON e o Git da Guilda
-* **Última missão executável aprovada:** Episode 17 — O Tribunal dos Testes
+* **Próxima missão:** Checkpoint — O Ambiente Profissional
+* **Última missão executável aprovada:** Episode 18 — Os Pergaminhos JSON e o Git da Guilda
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
 
-* Episodes 01–17 concluídos;
+* Episodes 01–18 concluídos;
 * Boss Battles I–V concluídas;
 * Core Java concluído com os 9 critérios de convergência da Boss Battle V aprovados;
 * Boss Battle V encerrada com aplicação integrada autoral, revisão adversarial e harness final com `14 PASS` e `0 FAIL`;
@@ -34,11 +34,19 @@
 * o mini-boss do Episode 17 produziu uma suíte autoral capaz de detectar regressão real de borda e retornar ao estado
   saudável após a correção;
 * a suíte final do Episode 17 foi reproduzida com `15` testes, `0` failures e `0` errors, com `BUILD SUCCESS`;
+* Episode 18 concluiu fundamentos de JSON com objetos, arrays, tipos, diferença entre representação JSON e objeto Java,
+  serialização, desserialização, mapeamento com `@JsonProperty` e observação de entrada JSON inválida;
+* Episode 18 concluiu o fluxo Git com `status`, `diff`, staging, commits coerentes, `.gitignore`, remotes, `fetch`,
+  `pull`, `push`, branches, merge, conflito real, histórico e Pull Request;
+* o mini-boss do Episode 18 produziu round trip JSON autoral para `Reliquia`, caso sintaticamente inválido e borda
+  `cargas = 0`;
+* o PR #1 integrou o Episode 18 à `main` após conflito controlado e revisão do histórico;
+* a reprodução final do Episode 18 executou `clean verify` com `4` testes, `0` failures, `0` errors e `BUILD SUCCESS`;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Episode 18 — Os Pergaminhos JSON e o Git da Guilda.
+1. Checkpoint — O Ambiente Profissional.
 
 ## Regra de manutenção
 
