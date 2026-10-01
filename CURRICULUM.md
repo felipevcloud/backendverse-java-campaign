@@ -63,7 +63,7 @@ O perfil é de entrada profissional sólida, não de senioridade. Concorrência 
 | exceptions, recursos e integridade diante de falha | Episode 13 |
 | `enum`, `record`, imutabilidade, `BigDecimal` e `java.time` | Episode 14 |
 | testes parametrizados | Episode 17 |
-| branches e integração Git | Episode 18 |
+| branches e integração Git | Episode 18 / Revisit 18 |
 | índices e `EXPLAIN` | Episode 20 |
 | configuração externa, profiles, secrets, logs e Actuator | Episode 32 |
 | migrations | Episode 38 |
@@ -624,6 +624,60 @@ Não bloqueiam a trilha profissional.
 | 4. Preservar sem esconder | remotes, branches, conflito, pull request e histórico | Pequena evolução é publicada em branch, revisada e integrada após resolver conflito controlado sem perder trabalho. Termina com aplicação e testes reproduzíveis no estado final. |
 
 **Evidência mínima:** aplicação Maven com JSON lido e produzido, erro inválido observado e fluxo Git real com branch, remote, push, revisão, conflito controlado e integração inspecionada.
+
+### Revisit 18 — A Oficina do Git
+
+**Natureza:** Revisit de consolidação. O Episode 18 permanece historicamente aprovado; este Revisit fecha uma lacuna operacional observada no uso de Git sem reabrir JSON nem revogar a conquista anterior.
+
+**Capacidade final:** conduzir conscientemente uma mudança desde o arquivo de trabalho até o repositório remoto e, depois de automatizar o fluxo básico, colaborar por branch, integração, conflito e Pull Request sem depender de uma receita de comandos.
+
+**Pré-requisitos:** Episode 18 concluído; familiaridade prévia com terminal e repositório Git já configurado.
+
+**Fora de escopo:** rebase, cherry-pick, stash, reflog, bisect, hooks, submodules, force push e reescrita avançada de histórico. Esses recursos não são necessários para a autonomia-alvo deste Revisit.
+
+**Mapa de Maestria**
+
+- modelo mental de working tree, staging/index, histórico local e remoto;
+- `git status` como leitura do estado atual;
+- `git diff` e `git diff --cached` como inspeção antes de registrar;
+- staging intencional com `git add <paths>`;
+- commits coerentes e mensagens proporcionais à intenção;
+- `.gitignore` para artefatos que não pertencem ao histórico;
+- `origin`, `push`, `fetch` e `pull` sem confundir envio com sincronização;
+- criação e troca de branches;
+- merge sem conflito;
+- conflito controlado, leitura dos marcadores e resolução sem perder trabalho;
+- histórico curto para confirmar o resultado da integração;
+- Pull Request como revisão e integração, não como sinônimo de branch;
+- escolha autônoma do próximo passo a partir do estado observado.
+
+**APIs, sintaxes e decisões que precisam ser ensinadas ou retomadas antes da cobrança**
+
+- `git status`;
+- `git diff` e `git diff --cached`;
+- `git add <paths>`;
+- `git commit -m "<mensagem>"`;
+- `git push origin <branch>`;
+- `git fetch origin` e `git pull`, incluindo a diferença conceitual entre baixar referências e integrar mudanças;
+- `git branch`, `git switch` e `git switch -c`;
+- `git merge <branch>`;
+- leitura e edição dos marcadores de conflito;
+- `git log --oneline` somente no alcance necessário para confirmar histórico;
+- criação, leitura e integração de Pull Request pelo GitHub;
+- decisão de quais arquivos entram no staging, quais ficam de fora e quando a mudança está pronta para commit.
+
+**Plano-base — 4 blocos**
+
+| Bloco | Mapa principal | Entrega e ponto de parada |
+|---|---|---|
+| 1. Enxergar antes de agir | working tree, staging, `status`, `diff`, `add` e `diff --cached` | Pequenas mudanças são criadas e inspecionadas em ciclos curtos. Termina quando o aprendiz consegue dizer onde cada mudança está, escolher o que preparar e decidir o próximo comando sem receber uma sequência pronta. |
+| 2. Registrar e publicar | commit, mensagens, `.gitignore`, remoto, `push`, `fetch` e `pull` | O aprendiz completa ciclos reais de mudança → inspeção → staging → commit → publicação e diferencia envio de sincronização. Termina somente após dois ciclos básicos consecutivos conduzidos de forma autônoma; enquanto isso não ocorrer, branches não entram. |
+| 3. Trabalhar em paralelo e integrar | branches, troca de contexto, merge, conflito, histórico e Pull Request | Uma evolução pequena nasce em branch, é publicada, revisada e integrada. Primeiro ocorre merge sem conflito; depois um conflito controlado é lido e resolvido. Termina quando branch, merge e PR tiverem papéis distintos no modelo mental. |
+| 4. Mini-boss — A Entrega da Guilda | fluxo completo e decisão autônoma | Em contexto novo, o aprendiz recebe apenas a mudança desejada e conduz o trabalho do arquivo local à branch publicada, revisão e integração, escolhendo os próximos passos a partir do estado observado. Termina com histórico compreensível e repositório remoto coerente, sem receita de comandos. |
+
+**Divisão de autoria:** o Sensei fornece conteúdo de arquivo, cenário remoto, mudanças concorrentes controladas e qualquer boilerplate que não seja alvo. O aprendiz executa os comandos Git, escolhe paths, interpreta estados, escreve mensagens de commit, resolve o conflito e conduz a integração.
+
+**Evidência mínima:** pelo menos dois ciclos básicos consecutivos sem sequência fornecida; staging seletivo inspecionado; commits coerentes; `.gitignore` aplicado; diferença entre `push`, `fetch` e `pull` explicada a partir de execução real; branch autoral publicada; merge sem conflito; conflito controlado resolvido; Pull Request integrado; mini-boss final conduzido sem receita e com histórico remoto verificado.
 
 ### Checkpoint — O Ambiente Profissional
 

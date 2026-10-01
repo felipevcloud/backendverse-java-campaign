@@ -12,14 +12,12 @@ The campaign starts with **Head First Java / Use a Cabeça Java, 3rd edition**, 
 |---|---|
 | Official methodology | Backendverse Playbook v1.5 — final |
 | Official curriculum | Backendverse Curriculum v1.5 |
-| Current arc | Saga V — O Fluxo e o Caos Controlado |
-| Last approved mission | Episode 12 — A Respiração dos Fluxos |
-| Next mission | Revisit 12 — O Arsenal Funcional |
-| Boss Battles completed | 4 |
+| Current arc | Saga VI — A Ponte para o Backend |
+| Last approved mission | Episode 18 — Os Pergaminhos JSON e o Git da Guilda |
+| Next mission | Revisit 18 — A Oficina do Git |
+| Boss Battles completed | 5 |
 
-Episodes 01–12 and Boss Battles I–IV remain approved. A previous Episode 13 approval was withdrawn after an audit found insufficient independent executable evidence, and the earlier Boss Battle V attempt ended without an artifact.
-
-The Revisit 12 is a one-time transition for this campaign: it preserves the completed Episode 12 while closing functional-interface, collector, reduction and `Optional` coverage added by v1.5.
+Episodes 01–18 and Boss Battles I–V remain approved. The Revisit 18 is a focused consolidation mission: JSON stays closed, while Git is rebuilt progressively from the essential local workflow through remotes, branches, integration, conflicts and Pull Requests. The checkpoint follows after Git can be driven from repository state instead of a copied command sequence.
 
 ---
 
@@ -70,11 +68,15 @@ backendverse-java-campaign/
 ├── Saga02_O_Caminho_Das_Tecnicas/
 ├── Saga03_O_Legado_Dos_Objetos/
 ├── Saga04_O_Arsenal_Do_Desenvolvedor/
-└── Saga05_O_Fluxo_E_O_Caos_controlado/
-    └── Episode12_A_Respiração_Dos_Fluxos/
+├── Saga05_O_Fluxo_E_O_Caos_controlado/
+└── Saga06_A_Ponte_Para_O_Backend/
+    ├── Episode15_O_Ritual_Maven/
+    ├── Episode16_A_Forja_Das_Dependencias/
+    ├── Episode17_O_Tribunal_Dos_Testes/
+    └── Episode18_Os_Pergaminhos_JSON_E_O_Git_Da_Guilda/
 ```
 
-A mission receives a directory only after it produces an executable or otherwise repository-worthy artifact. Empty Episode folders are not created in advance.
+A mission receives a directory only after it produces an executable or otherwise repository-worthy artifact. Empty Episode or Revisit folders are not created in advance.
 
 ---
 
