@@ -1,3 +1,3 @@
 Backendverse Git Lab
 estado: alterado-no-remoto
-ciclo: primeiro-autonomo
+ciclo: autonomia-em-treino
