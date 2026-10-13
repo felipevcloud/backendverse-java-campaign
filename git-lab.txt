@@ -1,3 +1,3 @@
 Backendverse Git Lab
-estado: alterado-na-main
+estado: conflito-resolvido
 ciclo: trabalhando-em-branch
