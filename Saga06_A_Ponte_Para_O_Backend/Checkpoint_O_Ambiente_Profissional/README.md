@@ -1,7 +1,8 @@
 ## Pré-Requisitos
 Java 21; Maven
 ## Filepath
-Saga06_A_Ponte_Para_O_Backend\Checkpoint_O_Ambiente_Profissional
+Windows: Saga06_A_Ponte_Para_O_Backend\Checkpoint_O_Ambiente_Profissional
+Linux: Saga06_A_Ponte_Para_O_Backend/Checkpoint_O_Ambiente_Profissional
 ## Regras
 
 Uma missão possui código, nível mínimo e recompensa em XP.
