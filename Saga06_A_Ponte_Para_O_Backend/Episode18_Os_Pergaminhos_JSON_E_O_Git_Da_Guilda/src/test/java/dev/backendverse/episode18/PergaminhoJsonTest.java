@@ -18,6 +18,8 @@ public class PergaminhoJsonTest {
 
         assertTrue(json.contains("nome_pergaminho"));
 
+        assertTrue(json.contains("total_paginas"));
+
         Pergaminho recon = mapper.readValue(json, Pergaminho.class);
 
         assertEquals(pergaminho, recon);
