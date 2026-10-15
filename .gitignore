@@ -30,3 +30,6 @@ replay_pid*
 
 # Maven generated build artifacts
 target/
+
+# Windows Explorer metadata
+Thumbs.db
