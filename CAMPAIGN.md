@@ -10,10 +10,10 @@
 
 ## Estado atual
 
-* **Saga:** Saga VI — A Ponte para o Backend
+* **Saga:** Saga VI — A Ponte para o Backend (concluída)
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Checkpoint — O Ambiente Profissional
-* **Última missão executável aprovada:** Revisit 18 — A Oficina do Git
+* **Próxima missão:** Episode 19 — As Tabelas da Verdade (Saga VII — O Reino dos Dados)
+* **Última missão executável aprovada:** Checkpoint — O Ambiente Profissional
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
@@ -60,12 +60,26 @@
 * o PR #3 integrou a BE-318 à `main`, contendo somente `Pergaminho.java` e `PergaminhoJsonTest.java`;
 * o fechamento do Revisit 18 terminou com `main` local e `origin/main` sincronizados no commit `14b4fed`, working tree
   limpa e histórico remoto coerente;
+* Checkpoint — O Ambiente Profissional concluído em três blocos com projeto Maven novo em Java 21, coordenadas,
+  dependências e plugins explícitos, pacotes organizados e build reproduzível;
+* o Checkpoint implementou `Missao` como `record` com elegibilidade por nível e rejeição de nível negativo,
+  `MissaoJson` com Jackson para serialização e desserialização e aplicação de demonstração `App`;
+* a suíte JUnit do Checkpoint executou `6` testes (`4` de JSON e `2` de regras), com `0` failures,
+  `0` errors e `BUILD SUCCESS` no `mvn clean verify`;
+* o Checkpoint teve staging seletivo, commits autorais inspecionados e feature publicada; a `main` remota avançou
+  independentemente por edição de `.gitignore` no GitHub (`Thumbs.db`), a divergência foi observada após `fetch`
+  e `origin/main` foi integrada diretamente à feature em `1ac165f`, sem alterar a `main` local;
+* após a integração, `mvn clean verify` confirmou novamente `6` testes aprovados e `BUILD SUCCESS`;
+* o README do Checkpoint documentou pré-requisitos, caminhos relativos, regras e instruções de validação, com revisão
+  adversarial de portabilidade para Linux; uma nova cópia publicada em `%TEMP%/backendverse-checkpoint-repro`
+  reproduziu o build com `6` testes, `0` failures, `0` errors e `BUILD SUCCESS`;
+* o PR #4 integrou à `main` os sete arquivos do Checkpoint, sem alterações históricas não relacionadas, por meio
+  do merge commit `a6e15d8`; o Mapa de Maestria encerrou com `7/7` critérios comprovados;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Checkpoint — O Ambiente Profissional.
-2. Episode 19 — As Tabelas da Verdade.
+1. Episode 19 — As Tabelas da Verdade.
 
 ## Regra de manutenção
 
