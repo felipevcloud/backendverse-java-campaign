@@ -1,6 +1,6 @@
 # Backendverse Campaign
 
-**Atualizado em:** 15/10/2026
+**Atualizado em:** 19/10/2026
 
 **Fonte oficial:** ramo `main` de `felipevcloud/backendverse-java-campaign`
 
@@ -10,15 +10,15 @@
 
 ## Estado atual
 
-* **Saga:** Saga VI — A Ponte para o Backend (concluída)
+* **Saga:** Saga VII — O Reino dos Dados (em andamento)
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Episode 19 — As Tabelas da Verdade (Saga VII — O Reino dos Dados)
-* **Última missão executável aprovada:** Checkpoint — O Ambiente Profissional
+* **Próxima missão:** Episode 20 — O Oráculo das Consultas (Saga VII — O Reino dos Dados)
+* **Última missão executável aprovada:** Episode 19 — As Tabelas da Verdade
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
 
-* Episodes 01–18 concluídos;
+* Episodes 01–19 concluídos;
 * Boss Battles I–V concluídas;
 * Core Java concluído com os 9 critérios de convergência da Boss Battle V aprovados;
 * Boss Battle V encerrada com aplicação integrada autoral, revisão adversarial e harness final com `14 PASS` e `0 FAIL`;
@@ -75,11 +75,16 @@
   reproduziu o build com `6` testes, `0` failures, `0` errors e `BUILD SUCCESS`;
 * o PR #4 integrou à `main` os sete arquivos do Checkpoint, sem alterações históricas não relacionadas, por meio
   do merge commit `a6e15d8`; o Mapa de Maestria encerrou com `7/7` critérios comprovados;
+* Episode 19 concluiu fundamentos de PostgreSQL 18.6 e SQL DDL, com tabela guiada, tipos, `NULL`, `IS NULL`,
+  `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `CHECK`, `DEFAULT`, inspeção e diagnóstico de erros de restrição;
+* o Episode 19 produziu `schema.sql` autoral para `credenciais_arena`, reconstruído duas vezes com a mesma estrutura,
+  e `verificacao.sql` como harness de teste fornecido; a execução confirmou `3` inserções válidas, `5` violações
+  esperadas rejeitadas e a borda `tentativas = 0`, com Mapa de Maestria `8/8` aprovado;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Episode 19 — As Tabelas da Verdade.
+1. Episode 20 — O Oráculo das Consultas.
 
 ## Regra de manutenção
 
