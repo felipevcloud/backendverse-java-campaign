@@ -12,13 +12,13 @@
 
 * **Saga:** Saga VII — O Reino dos Dados (em andamento)
 * **Missão aberta:** nenhuma
-* **Próxima missão:** Episode 20 — O Oráculo das Consultas (Saga VII — O Reino dos Dados)
-* **Última missão executável aprovada:** Episode 19 — As Tabelas da Verdade
+* **Próxima missão:** Episode 21 — As Escrituras Mutáveis (Saga VII — O Reino dos Dados)
+* **Última missão executável aprovada:** Episode 20 — O Oráculo das Consultas
 * **Boss Battles concluídas:** I–V
 
 ## Progresso preservado
 
-* Episodes 01–19 concluídos;
+* Episodes 01–20 concluídos;
 * Boss Battles I–V concluídas;
 * Core Java concluído com os 9 critérios de convergência da Boss Battle V aprovados;
 * Boss Battle V encerrada com aplicação integrada autoral, revisão adversarial e harness final com `14 PASS` e `0 FAIL`;
@@ -80,11 +80,23 @@
 * o Episode 19 produziu `schema.sql` autoral para `credenciais_arena`, reconstruído duas vezes com a mesma estrutura,
   e `verificacao.sql` como harness de teste fornecido; a execução confirmou `3` inserções válidas, `5` violações
   esperadas rejeitadas e a borda `tentativas = 0`, com Mapa de Maestria `8/8` aprovado;
+* Episode 20 concluiu fundamentos de consultas SQL com `SELECT`, `FROM`, aliases, projeção, `WHERE`, comparações,
+  operadores lógicos, `LIKE`, `IN`, `BETWEEN`, filtros de `NULL`, ordenação determinística, `LIMIT` e agregações;
+* o Episode 20 desenvolveu consultas autorais no PostgreSQL 18.6, incluindo filtros combinados, casos vazios,
+  conferência manual de resultados, correção de precedência lógica e depuração de ordenação;
+* o experimento de índices do Episode 20 utilizou massa de `100000` registros e comparou `Seq Scan` com `Index Scan`
+  para busca por código, observando redução do custo total estimado de `1791.00` para `8.31`, sem confundi-lo com
+  tempo real de execução;
+* o mini-boss A Torre dos Sinais integrou cinco objetivos de consultas, agregações, ausência e desempenho em domínio
+  novo, com `12` sinais e `100000` protocolos; a revisão identificou e corrigiu erros de limite e critério de
+  ordenação, seguida de execução reproduzível do harness sem erros;
+* o Episode 20 encerrou seus quatro blocos com Mapa de Maestria `11/11` aprovado, SQL autoral inspecionado e
+  resultados finais conferidos;
 * artefatos históricos aprovados permanecem protegidos.
 
 ## Sequência liberada
 
-1. Episode 20 — O Oráculo das Consultas.
+1. Episode 21 — As Escrituras Mutáveis.
 
 ## Regra de manutenção
 
